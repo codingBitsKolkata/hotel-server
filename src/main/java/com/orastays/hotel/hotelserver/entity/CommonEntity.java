@@ -23,8 +23,9 @@ import lombok.ToString;
 @ToString
 public abstract class CommonEntity implements Serializable {
 
+	private static final long serialVersionUID = 6451599191411832862L;
+
 	@Transient
-	private static final long serialVersionUID = -5367350189003102000L;
 
 	@Column(name = "status")
 	@JsonProperty("status")
