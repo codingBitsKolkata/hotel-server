@@ -1,0 +1,45 @@
+{
+   "Body": {
+      "OTA_HotelAvailRQ": {
+         "RequestedCurrency": "INR",
+         "CorrelationID": "3a6f665c-a315-4202-8691-f6a7fcd97c61",
+         "SearchCacheLevel": "Live",
+         "AvailRequestSegments": {
+            "AvailRequestSegment": {
+               "HotelSearchCriteria": {
+                  "Criterion": {
+                     "HotelRef": {
+                        "HotelCode": "00009838"
+                     },
+                     "StayDateRange": {
+                        "End": "2019-03-30",
+                        "Start": "2019-03-29"
+                     },
+                     "RoomStayCandidates": {
+                        "RoomStayCandidate": {
+                           "GuestCounts": {
+                              "GuestCount": {
+                                 "AgeQualifyingCode": "10"
+                              }
+                           }
+                        }
+                     },
+                     "TPA_Extensions": {
+                        "SeoEnabled": "false",
+                        "Pagination": {
+                           "hotelsFrom": "0",
+                           "hotelsTo": "0"
+                        },
+                        "UserAuthentication": {
+                           "password": "test@123",
+                           "propertyId": "1000000002",
+                           "username": "testsell"
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

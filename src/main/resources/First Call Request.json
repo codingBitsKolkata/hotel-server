@@ -1,0 +1,61 @@
+{
+   "Body": {
+      "OTA_HotelAvailRQ": {
+         "RequestedCurrency": "INR",
+         "SortOrder": "TG_RANKING",
+         "Version": "0.0",
+         "PrimaryLangID": "en",
+         "SearchCacheLevel": "VeryRecent",
+         "AvailRequestSegments": {
+            "AvailRequestSegment": {
+               "HotelSearchCriteria": {
+                  "Criterion": {
+                     "Address": {
+                        "CityName": "Mumbai",
+                        "CountryName": {
+                           "Code": "India"
+                        }
+                     },
+                     "HotelRef": null,
+                     "StayDateRange": {
+                        "End": "2019-03-30",
+                        "Start": "2019-03-29"
+                     },
+                     "RoomStayCandidates": {
+                        "RoomStayCandidate": {
+                           "GuestCounts": {
+                              "GuestCount": [
+                                 {
+                                    "AgeQualifyingCode": "10"
+                                 },
+                                 {
+                                    "Age": "10",
+                                    "AgeQualifyingCode": "8",
+                                    "Count": "1"
+                                 }
+                              ]
+                           }
+                        }
+                     },
+                     "TPA_Extensions": {
+                        "Pagination": {
+                           "enabled": "false",
+                           "hotelsFrom": "01",
+                           "hotelsTo": "05"
+                        },
+                        "HotelBasicInformation": {
+                           "Reviews": null
+                        },
+                        "UserAuthentication": {
+                           "password": "test@123",
+                           "propertyId": "1000000002",
+                           "username": "testsell"
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

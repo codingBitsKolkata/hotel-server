@@ -1,0 +1,29 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <OTA_HotelAvailRQ xmlns="http://www.opentravel.org/OTA/2003/05"
+RequestedCurrency="INR" CorrelationID="3a6f665c-a315-4202-8691-f6a7fcd97c61"
+SearchCacheLevel="Live">
+            <AvailRequestSegments>
+                <AvailRequestSegment>
+                    <HotelSearchCriteria>
+                        <Criterion>
+                            <HotelRef HotelCode="00009838"/>
+                            <StayDateRange End="2019-03-30" Start="2019-03-29"/>
+                            <RoomStayCandidates>
+                                <RoomStayCandidate>
+                                    <GuestCounts>
+                                        <GuestCount AgeQualifyingCode="10"/>
+                                    </GuestCounts>
+                                </RoomStayCandidate>
+                            </RoomStayCandidates>
+                            <TPA_Extensions SeoEnabled="false">
+                                <Pagination hotelsFrom="0" hotelsTo="0"/>
+                                <UserAuthentication password="test@123" propertyId="1000000002" username="testsell"/>
+                            </TPA_Extensions>
+                        </Criterion>
+                    </HotelSearchCriteria>
+                </AvailRequestSegment>
+            </AvailRequestSegments>
+        </OTA_HotelAvailRQ>
+    </soap:Body>
+</soap:Envelope>

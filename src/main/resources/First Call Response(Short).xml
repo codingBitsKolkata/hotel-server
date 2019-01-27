@@ -1,0 +1,144 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <OTA_HotelAvailRS xmlns="http://www.opentravel.org/OTA/2003/05" CorrelationID="3a6f665c-a315-4202-8691-f6a7fcd97c61" PrimaryLangID="en" AltLangID="en">
+            <Success/>
+            <RoomStays>
+                <RoomStay>
+                    <RoomTypes>
+                        <RoomType NonSmoking="false" RoomType="Executive" RoomTypeCode="0000037609">
+                            <RoomDescription>
+                                <Text/>
+                                <Image/>
+                                <Image/>
+                            </RoomDescription>
+                            <AdditionalDetails/>
+                            <Occupancy MaxOccupancy="3" AgeQualifyingCode="10"/>
+                            <Occupancy MaxOccupancy="2" AgeQualifyingCode="8" MaxAge="12" MinAge="7"/>
+                            <TPA_Extensions checkinRestriction="false" checkoutRestriction="false">
+                                <RoomType maxAdult="3" maxChild="2" maxChildAge="12" maxGuest="3" minChildAge="7" propertyLevel="N" smoking="Y"/>
+                            </TPA_Extensions>
+                        </RoomType>
+                        <RoomType NonSmoking="false" RoomType="Suite" RoomTypeCode="0000037611">
+                            <RoomDescription>
+                                <Text/>
+                                <Image/>
+                                <Image/>
+                            </RoomDescription>
+                            <AdditionalDetails/>
+                            <Occupancy MaxOccupancy="3" AgeQualifyingCode="10"/>
+                            <Occupancy MaxOccupancy="2" AgeQualifyingCode="8" MaxAge="12" MinAge="7"/>
+                            <TPA_Extensions checkinRestriction="false" checkoutRestriction="false">
+                                <RoomType maxAdult="3" maxChild="2" maxChildAge="12" maxGuest="3" minChildAge="7" propertyLevel="N" smoking="Y"/>
+                            </TPA_Extensions>
+                        </RoomType>
+                    </RoomTypes>
+                    <RatePlans>
+                        <RatePlan AvailableQuantity="4" RatePlanCode="0000144760" RatePlanName="Executive" RatePlanType="24">
+                            <Guarantee GuaranteeType="PrePay"/>
+                            <CancelPenalties>
+                                <CancelPenalty NonRefundable="true">
+                                    <Deadline/>
+                                    <PenaltyDescription Name="FREE_CANCELLATION">
+                                        <Text>N</Text>
+                                    </PenaltyDescription>
+                                </CancelPenalty>
+                            </CancelPenalties>
+                            <RatePlanDescription>
+                                <Text/>
+                                <Text/>
+                            </RatePlanDescription>
+                            <RatePlanInclusions>
+                                <RatePlanInclusionDesciption>
+                                    <Text>Breakfast, </Text>
+                                    <Text>Early Check-in / Late Check-out (Subject to Availability), </Text>
+                                </RatePlanInclusionDesciption>
+                            </RatePlanInclusions>
+                            <TPA_Extensions>
+                                <DiscountCouponDisplayIndicator Enabled="true"/>
+                                <BestRatePlan>true</BestRatePlan>
+                            </TPA_Extensions>
+                        </RatePlan>
+                        <RatePlan AvailableQuantity="2" RatePlanCode="0000144761" RatePlanName="Suite" RatePlanType="24">
+                            <Guarantee GuaranteeType="PrePay"/>
+                            <CancelPenalties>
+                                <CancelPenalty NonRefundable="true">
+                                    <Deadline/>
+                                    <PenaltyDescription Name="FREE_CANCELLATION">
+                                        <Text>N</Text>
+                                    </PenaltyDescription>
+                                </CancelPenalty>
+                            </CancelPenalties>
+                            <RatePlanDescription>
+                                <Text/>
+                                <Text/>
+                            </RatePlanDescription>
+                            <RatePlanInclusions>
+                                <RatePlanInclusionDesciption>
+                                    <Text>Breakfast, </Text>
+                                    <Text>Early Check-in / Late Check-out (Subject to Availability), </Text>
+                                </RatePlanInclusionDesciption>
+                            </RatePlanInclusions>
+                            <TPA_Extensions>
+                                <DiscountCouponDisplayIndicator Enabled="true"/>
+                            </TPA_Extensions>
+                        </RatePlan>
+                    </RatePlans>
+                    <RoomRates>
+                        <RoomRate RoomID="0000037609" RatePlanCode="0000144760">
+                            <Rates>
+                                <Rate EffectiveDate="2019-03-29T00:00:00.000+05:30">
+                                    <Base AmountBeforeTax="5199.0">
+                                        <Taxes Amount="0"/>
+                                    </Base>
+                                    <TPA_Extensions>
+                                        <Rate BaseAdultOccupancy="2" BaseChildOccupancy="0" Bookable="true" RatePlanCode="0000144760" RoomTypeCode="0000037609"/>
+                                        <AffiliateCommission Amount="987.0" HotelTaxIncluded="false" Percent="19.0"/>
+                                    </TPA_Extensions>
+                                </Rate>
+                            </Rates>
+                            <Total CurrencyCode="INR"/>
+                            <GuestCounts>
+                                <GuestCount AgeQualifyingCode="10" Count="2"/>
+                                <GuestCount AgeQualifyingCode="8" Count="0"/>
+                            </GuestCounts>
+                        </RoomRate>
+                        <RoomRate RoomID="0000037611" RatePlanCode="0000144761">
+                            <Rates>
+                                <Rate EffectiveDate="2019-03-29T00:00:00.000+05:30">
+                                    <Base AmountBeforeTax="7199.0">
+                                        <Taxes Amount="0"/>
+                                    </Base>
+                                    <TPA_Extensions>
+                                        <Rate BaseAdultOccupancy="2" BaseChildOccupancy="0" Bookable="true" RatePlanCode="0000144761" RoomTypeCode="0000037611"/>
+                                        <AffiliateCommission Amount="1367.0" HotelTaxIncluded="false" Percent="19.0"/>
+                                    </TPA_Extensions>
+                                </Rate>
+                            </Rates>
+                            <Total CurrencyCode="INR"/>
+                            <GuestCounts>
+                                <GuestCount AgeQualifyingCode="10" Count="2"/>
+                                <GuestCount AgeQualifyingCode="8" Count="0"/>
+                            </GuestCounts>
+                        </RoomRate>
+                    </RoomRates>
+                    <BasicPropertyInfo CurrencyCode="INR" HotelCode="00009838">
+                        <Address>
+                            <CityName>Mumbai</CityName>
+                            <StateProv StateCode="27"/>
+                            <CountryName>India</CountryName>
+                        </Address>
+                    </BasicPropertyInfo>
+                    <TPA_Extensions LowestRatePlanId="0000144760" PahSCRestriction="true" StopSell="false">
+                        <HotelBasicInformation HotelType="TGU" Rank="2" featured="true" propertyType="Hotels" srpPriority="false" yatraSmart="false">
+                            <Reviews/>
+                        </HotelBasicInformation>
+                        <DeepLinkInformation overviewURL="//www.travelguru.com/hotels/India/mumbai/aura-grande-00009838?checkInDate=29-03-2019&amp;checkOutDate=30-03-2019&amp;numRooms=1&amp;rooms[0].adult=1&amp;rooms[0].children=1&amp;rooms[0].child[0].age=10&amp;currencyCode=INR"/>
+                    </TPA_Extensions>
+                </RoomStay>
+			</RoomStays>
+				<TPA_Extensions>
+                <HotelsInfo available="474" cacheable="true" deals="20" maxPrice="53001.00" minPrice="400.00" total="0"/>
+            </TPA_Extensions>
+        </OTA_HotelAvailRS>
+    </soap:Body>
+</soap:Envelope>
