@@ -1,19 +1,19 @@
 
 package firstcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Rate {
 
-    @SerializedName("EffectiveDate")
-    @Expose
+    @JsonProperty("EffectiveDate")
+    
     public String effectiveDate;
-    @SerializedName("Base")
-    @Expose
+    @JsonProperty("Base")
+    
     public Base base;
-    @SerializedName("TPA_Extensions")
-    @Expose
+    @JsonProperty("TPA_Extensions")
+    
     public TPAExtensions__ tPAExtensions;
 
 }

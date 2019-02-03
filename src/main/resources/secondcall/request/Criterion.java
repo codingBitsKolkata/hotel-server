@@ -1,22 +1,22 @@
 
 package secondcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Criterion {
 
-    @SerializedName("HotelRef")
-    @Expose
+    @JsonProperty("HotelRef")
+    
     public HotelRef hotelRef;
-    @SerializedName("StayDateRange")
-    @Expose
+    @JsonProperty("StayDateRange")
+    
     public StayDateRange stayDateRange;
-    @SerializedName("RoomStayCandidates")
-    @Expose
+    @JsonProperty("RoomStayCandidates")
+    
     public RoomStayCandidates roomStayCandidates;
-    @SerializedName("TPA_Extensions")
-    @Expose
+    @JsonProperty("TPA_Extensions")
+    
     public TPAExtensions tPAExtensions;
 
 }

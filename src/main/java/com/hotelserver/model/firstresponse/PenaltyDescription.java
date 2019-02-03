@@ -1,8 +1,10 @@
+
 package com.hotelserver.model.firstresponse;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -14,17 +16,13 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = false)
 @ToString
 @JsonInclude(Include.NON_NULL)
-
 public class PenaltyDescription {
 
-	@JsonProperty("Name")
-	private String Name;
-	@JsonProperty("Text")
-	private String Text;
+    @SerializedName("Text")
+    @Expose
+    public String text;
+    @SerializedName("Name")
+    @Expose
+    public String name;
 
-	// @Override
-	// public String toString()
-	// {
-	// return "ClassPojo [Name = "+Name+", Text = "+Text+"]";
-	// }
 }

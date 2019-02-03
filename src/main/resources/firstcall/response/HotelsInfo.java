@@ -1,28 +1,28 @@
 
 package firstcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class HotelsInfo {
 
-    @SerializedName("available")
-    @Expose
+    @JsonProperty("available")
+    
     public String available;
-    @SerializedName("cacheable")
-    @Expose
+    @JsonProperty("cacheable")
+    
     public String cacheable;
-    @SerializedName("deals")
-    @Expose
+    @JsonProperty("deals")
+    
     public String deals;
-    @SerializedName("maxPrice")
-    @Expose
+    @JsonProperty("maxPrice")
+    
     public String maxPrice;
-    @SerializedName("minPrice")
-    @Expose
+    @JsonProperty("minPrice")
+    
     public String minPrice;
-    @SerializedName("total")
-    @Expose
+    @JsonProperty("total")
+    
     public String total;
 
 }

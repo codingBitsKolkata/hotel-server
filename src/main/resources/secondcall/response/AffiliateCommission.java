@@ -1,19 +1,19 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class AffiliateCommission {
 
-    @SerializedName("Amount")
-    @Expose
+    @JsonProperty("Amount")
+    
     public String amount;
-    @SerializedName("HotelTaxIncluded")
-    @Expose
+    @JsonProperty("HotelTaxIncluded")
+    
     public String hotelTaxIncluded;
-    @SerializedName("Percent")
-    @Expose
+    @JsonProperty("Percent")
+    
     public String percent;
 
 }

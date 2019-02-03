@@ -1,13 +1,13 @@
 
 package firstcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Body {
 
-    @SerializedName("OTA_HotelAvailRS")
-    @Expose
+    @JsonProperty("OTA_HotelAvailRS")
+    
     public OTAHotelAvailRS oTAHotelAvailRS;
 
 }

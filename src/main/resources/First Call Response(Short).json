@@ -1,305 +1,940 @@
 {
-   "Body": {
+  "soap:Envelope": {
+    "xmlns:soap": "http://schemas.xmlsoap.org/soap/envelope/",
+    "soap:Body": {
       "OTA_HotelAvailRS": {
-         "CorrelationID": "3a6f665c-a315-4202-8691-f6a7fcd97c61",
-         "PrimaryLangID": "en",
-         "AltLangID": "en",
-         "Success": null,
-         "RoomStays": {
-            "RoomStay": {
-               "RoomTypes": {
-                  "RoomType": [
-                     {
-                        "NonSmoking": "false",
-                        "RoomType": "Executive",
-                        "RoomTypeCode": "0000037609",
-                        "RoomDescription": {
-                           "Text": null,
-                           "Image": [
-                              null,
-                              null
-                           ]
-                        },
-                        "AdditionalDetails": null,
-                        "Occupancy": [
-                           {
-                              "MaxOccupancy": "3",
-                              "AgeQualifyingCode": "10"
-                           },
-                           {
-                              "MaxOccupancy": "2",
-                              "AgeQualifyingCode": "8",
-                              "MaxAge": "12",
-                              "MinAge": "7"
-                           }
-                        ],
-                        "TPA_Extensions": {
-                           "checkinRestriction": "false",
-                           "checkoutRestriction": "false",
-                           "RoomType": {
-                              "maxAdult": "3",
-                              "maxChild": "2",
-                              "maxChildAge": "12",
-                              "maxGuest": "3",
-                              "minChildAge": "7",
-                              "propertyLevel": "N",
-                              "smoking": "Y"
-                           }
-                        }
-                     },
-                     {
-                        "NonSmoking": "false",
-                        "RoomType": "Suite",
-                        "RoomTypeCode": "0000037611",
-                        "RoomDescription": {
-                           "Text": null,
-                           "Image": [
-                              null,
-                              null
-                           ]
-                        },
-                        "AdditionalDetails": null,
-                        "Occupancy": [
-                           {
-                              "MaxOccupancy": "3",
-                              "AgeQualifyingCode": "10"
-                           },
-                           {
-                              "MaxOccupancy": "2",
-                              "AgeQualifyingCode": "8",
-                              "MaxAge": "12",
-                              "MinAge": "7"
-                           }
-                        ],
-                        "TPA_Extensions": {
-                           "checkinRestriction": "false",
-                           "checkoutRestriction": "false",
-                           "RoomType": {
-                              "maxAdult": "3",
-                              "maxChild": "2",
-                              "maxChildAge": "12",
-                              "maxGuest": "3",
-                              "minChildAge": "7",
-                              "propertyLevel": "N",
-                              "smoking": "Y"
-                           }
-                        }
-                     }
-                  ]
-               },
-               "RatePlans": {
-                  "RatePlan": [
-                     {
-                        "AvailableQuantity": "4",
-                        "RatePlanCode": "0000144760",
-                        "RatePlanName": "Executive",
-                        "RatePlanType": "24",
-                        "Guarantee": {
-                           "GuaranteeType": "PrePay"
-                        },
-                        "CancelPenalties": {
-                           "CancelPenalty": {
-                              "NonRefundable": "true",
-                              "Deadline": null,
-                              "PenaltyDescription": {
-                                 "Name": "FREE_CANCELLATION",
-                                 "Text": "N"
-                              }
-                           }
-                        },
-                        "RatePlanDescription": {
-                           "Text": [
-                              null,
-                              null
-                           ]
-                        },
-                        "RatePlanInclusions": {
-                           "RatePlanInclusionDesciption": {
-                              "Text": [
-                                 "Breakfast,",
-                                 "Early Check-in / Late Check-out (Subject to Availability),"
-                              ]
-                           }
-                        },
-                        "TPA_Extensions": {
-                           "DiscountCouponDisplayIndicator": {
-                              "Enabled": "true"
-                           },
-                           "BestRatePlan": "true"
-                        }
-                     },
-                     {
-                        "AvailableQuantity": "2",
-                        "RatePlanCode": "0000144761",
-                        "RatePlanName": "Suite",
-                        "RatePlanType": "24",
-                        "Guarantee": {
-                           "GuaranteeType": "PrePay"
-                        },
-                        "CancelPenalties": {
-                           "CancelPenalty": {
-                              "NonRefundable": "true",
-                              "Deadline": null,
-                              "PenaltyDescription": {
-                                 "Name": "FREE_CANCELLATION",
-                                 "Text": "N"
-                              }
-                           }
-                        },
-                        "RatePlanDescription": {
-                           "Text": [
-                              null,
-                              null
-                           ]
-                        },
-                        "RatePlanInclusions": {
-                           "RatePlanInclusionDesciption": {
-                              "Text": [
-                                 "Breakfast,",
-                                 "Early Check-in / Late Check-out (Subject to Availability),"
-                              ]
-                           }
-                        },
-                        "TPA_Extensions": {
-                           "DiscountCouponDisplayIndicator": {
-                              "Enabled": "true"
-                           }
-                        }
-                     }
-                  ]
-               },
-               "RoomRates": {
-                  "RoomRate": [
-                     {
-                        "RoomID": "0000037609",
-                        "RatePlanCode": "0000144760",
-                        "Rates": {
-                           "Rate": {
-                              "EffectiveDate": "2019-03-29T00:00:00.000+05:30",
-                              "Base": {
-                                 "AmountBeforeTax": "5199.0",
-                                 "Taxes": {
-                                    "Amount": "0"
-                                 }
-                              },
-                              "TPA_Extensions": {
-                                 "Rate": {
-                                    "BaseAdultOccupancy": "2",
-                                    "BaseChildOccupancy": "0",
-                                    "Bookable": "true",
-                                    "RatePlanCode": "0000144760",
-                                    "RoomTypeCode": "0000037609"
-                                 },
-                                 "AffiliateCommission": {
-                                    "Amount": "987.0",
-                                    "HotelTaxIncluded": "false",
-                                    "Percent": "19.0"
-                                 }
-                              }
-                           }
-                        },
-                        "Total": {
-                           "CurrencyCode": "INR"
-                        },
-                        "GuestCounts": {
-                           "GuestCount": [
-                              {
-                                 "AgeQualifyingCode": "10",
-                                 "Count": "2"
-                              },
-                              {
-                                 "AgeQualifyingCode": "8",
-                                 "Count": "0"
-                              }
-                           ]
-                        }
-                     },
-                     {
-                        "RoomID": "0000037611",
-                        "RatePlanCode": "0000144761",
-                        "Rates": {
-                           "Rate": {
-                              "EffectiveDate": "2019-03-29T00:00:00.000+05:30",
-                              "Base": {
-                                 "AmountBeforeTax": "7199.0",
-                                 "Taxes": {
-                                    "Amount": "0"
-                                 }
-                              },
-                              "TPA_Extensions": {
-                                 "Rate": {
-                                    "BaseAdultOccupancy": "2",
-                                    "BaseChildOccupancy": "0",
-                                    "Bookable": "true",
-                                    "RatePlanCode": "0000144761",
-                                    "RoomTypeCode": "0000037611"
-                                 },
-                                 "AffiliateCommission": {
-                                    "Amount": "1367.0",
-                                    "HotelTaxIncluded": "false",
-                                    "Percent": "19.0"
-                                 }
-                              }
-                           }
-                        },
-                        "Total": {
-                           "CurrencyCode": "INR"
-                        },
-                        "GuestCounts": {
-                           "GuestCount": [
-                              {
-                                 "AgeQualifyingCode": "10",
-                                 "Count": "2"
-                              },
-                              {
-                                 "AgeQualifyingCode": "8",
-                                 "Count": "0"
-                              }
-                           ]
-                        }
-                     }
-                  ]
-               },
-               "BasicPropertyInfo": {
-                  "CurrencyCode": "INR",
-                  "HotelCode": "00009838",
-                  "Address": {
-                     "CityName": "Mumbai",
-                     "StateProv": {
-                        "StateCode": "27"
-                     },
-                     "CountryName": "India"
-                  }
-               },
-               "TPA_Extensions": {
-                  "LowestRatePlanId": "0000144760",
-                  "PahSCRestriction": "true",
-                  "StopSell": "false",
-                  "HotelBasicInformation": {
-                     "HotelType": "TGU",
-                     "Rank": "2",
-                     "featured": "true",
-                     "propertyType": "Hotels",
-                     "srpPriority": "false",
-                     "yatraSmart": "false",
-                     "Reviews": null
+        "xmlns": "http://www.opentravel.org/OTA/2003/05",
+        "RoomStays": {
+          "RoomStay": [
+            {
+              "BasicPropertyInfo": {
+                "CurrencyCode": "INR",
+                "HotelCode": "00009838",
+                "Address": {
+                  "CountryName": "India",
+                  "StateProv": {
+                    "StateCode": 27
                   },
-                  "DeepLinkInformation": {
-                     "overviewURL": "//www.travelguru.com/hotels/India/mumbai/aura-grande-00009838?checkInDate=29-03-2019&checkOutDate=30-03-2019&numRooms=1&rooms[0].adult=1&rooms[0].children=1&rooms[0].child[0].age=10&currencyCode=INR"
+                  "CityName": "Mumbai"
+                }
+              },
+              "RoomTypes": {
+                "RoomType": [
+                  {
+                    "AdditionalDetails": "",
+                    "RoomType": "Executive",
+                    "RoomDescription": {
+                      "Text": "",
+                      "Image": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "Occupancy": [
+                      {
+                        "MaxOccupancy": 3,
+                        "AgeQualifyingCode": 10
+                      },
+                      {
+                        "MinAge": 7,
+                        "MaxOccupancy": 2,
+                        "MaxAge": 12,
+                        "AgeQualifyingCode": 8
+                      }
+                    ],
+                    "TPA_Extensions": {
+                      "RoomType": {
+                        "maxAdult": 3,
+                        "propertyLevel": "N",
+                        "maxGuest": 3,
+                        "smoking": "Y",
+                        "maxChild": 2,
+                        "maxChildAge": 12,
+                        "minChildAge": 7
+                      },
+                      "checkoutRestriction": false,
+                      "checkinRestriction": false
+                    },
+                    "RoomTypeCode": "0000037609",
+                    "NonSmoking": false
+                  },
+                  {
+                    "AdditionalDetails": "",
+                    "RoomType": "Suite",
+                    "RoomDescription": {
+                      "Text": "",
+                      "Image": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "Occupancy": [
+                      {
+                        "MaxOccupancy": 3,
+                        "AgeQualifyingCode": 10
+                      },
+                      {
+                        "MinAge": 7,
+                        "MaxOccupancy": 2,
+                        "MaxAge": 12,
+                        "AgeQualifyingCode": 8
+                      }
+                    ],
+                    "TPA_Extensions": {
+                      "RoomType": {
+                        "maxAdult": 3,
+                        "propertyLevel": "N",
+                        "maxGuest": 3,
+                        "smoking": "Y",
+                        "maxChild": 2,
+                        "maxChildAge": 12,
+                        "minChildAge": 7
+                      },
+                      "checkoutRestriction": false,
+                      "checkinRestriction": false
+                    },
+                    "RoomTypeCode": "0000037611",
+                    "NonSmoking": false
                   }
-               }
+                ]
+              },
+              "TPA_Extensions": {
+                "LowestRatePlanId": "0000144760",
+                "DeepLinkInformation": {
+                  "overviewURL": "//www.travelguru.com/hotels/India/mumbai/aura-grande-00009838?checkInDate=29-03-2019&checkOutDate=30-03-2019&numRooms=1&rooms[0].adult=2&rooms[0].children=1&rooms[0].child[0].age=10&currencyCode=INR"
+                },
+                "StopSell": false,
+                "PahSCRestriction": true,
+                "HotelBasicInformation": {
+                  "srpPriority": false,
+                  "featured": true,
+                  "yatraSmart": false,
+                  "propertyType": "Hotels",
+                  "HotelType": "TGU",
+                  "Rank": 2
+                }
+              },
+              "RatePlans": {
+                "RatePlan": [
+                  {
+                    "RatePlanType": 24,
+                    "RatePlanInclusions": {
+                      "RatePlanInclusionDesciption": {
+                        "Text": [
+                          "Breakfast,",
+                          "Early Check-in / Late Check-out (Subject to Availability),"
+                        ]
+                      }
+                    },
+                    "TPA_Extensions": {
+                      "AdditionalGuests": {
+                        "AdditionalGuest": {
+                          "roomNo": 1,
+                          "children": 1,
+                          "adults": 0
+                        }
+                      },
+                      "BestRatePlan": true,
+                      "DiscountCouponDisplayIndicator": {
+                        "Enabled": true
+                      }
+                    },
+                    "RatePlanDescription": {
+                      "Text": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "RatePlanName": "Executive",
+                    "Guarantee": {
+                      "GuaranteeType": "PrePay"
+                    },
+                    "CancelPenalties": {
+                      "CancelPenalty": {
+                        "PenaltyDescription": {
+                          "Text": "N",
+                          "Name": "FREE_CANCELLATION"
+                        },
+                        "Deadline": "",
+                        "NonRefundable": true
+                      }
+                    },
+                    "AvailableQuantity": 4,
+                    "RatePlanCode": "0000144760"
+                  },
+                  {
+                    "RatePlanType": 24,
+                    "RatePlanInclusions": {
+                      "RatePlanInclusionDesciption": {
+                        "Text": [
+                          "Breakfast,",
+                          "Early Check-in / Late Check-out (Subject to Availability),"
+                        ]
+                      }
+                    },
+                    "TPA_Extensions": {
+                      "AdditionalGuests": {
+                        "AdditionalGuest": {
+                          "roomNo": 1,
+                          "children": 1,
+                          "adults": 0
+                        }
+                      },
+                      "DiscountCouponDisplayIndicator": {
+                        "Enabled": true
+                      }
+                    },
+                    "RatePlanDescription": {
+                      "Text": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "RatePlanName": "Suite",
+                    "Guarantee": {
+                      "GuaranteeType": "PrePay"
+                    },
+                    "CancelPenalties": {
+                      "CancelPenalty": {
+                        "PenaltyDescription": {
+                          "Text": "N",
+                          "Name": "FREE_CANCELLATION"
+                        },
+                        "Deadline": "",
+                        "NonRefundable": true
+                      }
+                    },
+                    "AvailableQuantity": 2,
+                    "RatePlanCode": "0000144761"
+                  }
+                ]
+              },
+              "RoomRates": {
+                "RoomRate": [
+                  {
+                    "Rates": {
+                      "Rate": {
+                        "AdditionalGuestAmounts": {
+                          "AdditionalGuestAmount": {
+                            "Amount": {
+                              "AmountBeforeTax": 1000
+                            },
+                            "RPH": 1,
+                            "AgeQualifyingCode": 8
+                          }
+                        },
+                        "TPA_Extensions": {
+                          "Rate": {
+                            "BaseChildOccupancy": 0,
+                            "BaseAdultOccupancy": 2,
+                            "RoomTypeCode": "0000037609",
+                            "Bookable": true,
+                            "RatePlanCode": "0000144760"
+                          },
+                          "AffiliateCommission": {
+                            "Percent": 19,
+                            "Amount": 1177,
+                            "HotelTaxIncluded": false
+                          }
+                        },
+                        "Base": {
+                          "AmountBeforeTax": 5199,
+                          "Taxes": {
+                            "Amount": 0
+                          }
+                        },
+                        "EffectiveDate": "2019-03-29T00:00:00.000+05:30"
+                      }
+                    },
+                    "GuestCounts": {
+                      "GuestCount": [
+                        {
+                          "Count": 2,
+                          "AgeQualifyingCode": 10
+                        },
+                        {
+                          "Count": 0,
+                          "AgeQualifyingCode": 8
+                        }
+                      ]
+                    },
+                    "Total": {
+                      "CurrencyCode": "INR"
+                    },
+                    "RoomID": "0000037609",
+                    "RatePlanCode": "0000144760"
+                  },
+                  {
+                    "Rates": {
+                      "Rate": {
+                        "AdditionalGuestAmounts": {
+                          "AdditionalGuestAmount": {
+                            "Amount": {
+                              "AmountBeforeTax": 1000
+                            },
+                            "RPH": 1,
+                            "AgeQualifyingCode": 8
+                          }
+                        },
+                        "TPA_Extensions": {
+                          "Rate": {
+                            "BaseChildOccupancy": 0,
+                            "BaseAdultOccupancy": 2,
+                            "RoomTypeCode": "0000037611",
+                            "Bookable": true,
+                            "RatePlanCode": "0000144761"
+                          },
+                          "AffiliateCommission": {
+                            "Percent": 19,
+                            "Amount": 1557,
+                            "HotelTaxIncluded": false
+                          }
+                        },
+                        "Base": {
+                          "AmountBeforeTax": 7199,
+                          "Taxes": {
+                            "Amount": 0
+                          }
+                        },
+                        "EffectiveDate": "2019-03-29T00:00:00.000+05:30"
+                      }
+                    },
+                    "GuestCounts": {
+                      "GuestCount": [
+                        {
+                          "Count": 2,
+                          "AgeQualifyingCode": 10
+                        },
+                        {
+                          "Count": 0,
+                          "AgeQualifyingCode": 8
+                        }
+                      ]
+                    },
+                    "Total": {
+                      "CurrencyCode": "INR"
+                    },
+                    "RoomID": "0000037611",
+                    "RatePlanCode": "0000144761"
+                  }
+                ]
+              }
+            },
+            {
+              "BasicPropertyInfo": {
+                "CurrencyCode": "INR",
+                "HotelCode": "00000349",
+                "Address": {
+                  "CountryName": "India",
+                  "StateProv": {
+                    "StateCode": 27
+                  },
+                  "CityName": "Mumbai"
+                }
+              },
+              "RoomTypes": {
+                "RoomType": [
+                  {
+                    "AdditionalDetails": "",
+                    "RoomType": "Executive Double Room",
+                    "RoomDescription": {
+                      "Text": "",
+                      "Image": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "Occupancy": [
+                      {
+                        "MaxOccupancy": 3,
+                        "AgeQualifyingCode": 10
+                      },
+                      {
+                        "MinAge": 5,
+                        "MaxOccupancy": 2,
+                        "MaxAge": 12,
+                        "AgeQualifyingCode": 8
+                      }
+                    ],
+                    "TPA_Extensions": {
+                      "RoomType": {
+                        "maxAdult": 3,
+                        "propertyLevel": "N",
+                        "maxGuest": 4,
+                        "smoking": "Y",
+                        "maxChild": 2,
+                        "maxChildAge": 12,
+                        "minChildAge": 5
+                      },
+                      "checkoutRestriction": false,
+                      "checkinRestriction": false
+                    },
+                    "RoomTypeCode": "0000006018",
+                    "NonSmoking": false
+                  },
+                  {
+                    "AdditionalDetails": "",
+                    "RoomType": "Club Room",
+                    "RoomDescription": {
+                      "Text": "",
+                      "Image": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "Occupancy": [
+                      {
+                        "MaxOccupancy": 2,
+                        "AgeQualifyingCode": 10
+                      },
+                      {
+                        "MinAge": 5,
+                        "MaxOccupancy": 1,
+                        "MaxAge": 12,
+                        "AgeQualifyingCode": 8
+                      }
+                    ],
+                    "TPA_Extensions": {
+                      "RoomType": {
+                        "maxAdult": 2,
+                        "propertyLevel": "N",
+                        "maxGuest": 3,
+                        "smoking": "Y",
+                        "maxChild": 1,
+                        "maxChildAge": 12,
+                        "minChildAge": 5
+                      },
+                      "checkoutRestriction": false,
+                      "checkinRestriction": false
+                    },
+                    "RoomTypeCode": "0000185142",
+                    "NonSmoking": false
+                  },
+                  {
+                    "AdditionalDetails": "",
+                    "RoomType": "Suite Room",
+                    "RoomDescription": {
+                      "Text": "",
+                      "Image": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "Occupancy": [
+                      {
+                        "MaxOccupancy": 2,
+                        "AgeQualifyingCode": 10
+                      },
+                      {
+                        "MinAge": 5,
+                        "MaxOccupancy": 1,
+                        "MaxAge": 12,
+                        "AgeQualifyingCode": 8
+                      }
+                    ],
+                    "TPA_Extensions": {
+                      "RoomType": {
+                        "maxAdult": 2,
+                        "propertyLevel": "N",
+                        "maxGuest": 3,
+                        "smoking": "Y",
+                        "maxChild": 1,
+                        "maxChildAge": 12,
+                        "minChildAge": 5
+                      },
+                      "checkoutRestriction": false,
+                      "checkinRestriction": false
+                    },
+                    "RoomTypeCode": "0000185143",
+                    "NonSmoking": false
+                  },
+                  {
+                    "AdditionalDetails": "",
+                    "RoomType": "Deluxe  Double Room",
+                    "RoomDescription": {
+                      "Text": "",
+                      "Image": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "Occupancy": [
+                      {
+                        "MaxOccupancy": 3,
+                        "AgeQualifyingCode": 10
+                      },
+                      {
+                        "MinAge": 5,
+                        "MaxOccupancy": 2,
+                        "MaxAge": 12,
+                        "AgeQualifyingCode": 8
+                      }
+                    ],
+                    "TPA_Extensions": {
+                      "RoomType": {
+                        "maxAdult": 3,
+                        "propertyLevel": "N",
+                        "maxGuest": 4,
+                        "smoking": "Y",
+                        "maxChild": 2,
+                        "maxChildAge": 12,
+                        "minChildAge": 5
+                      },
+                      "checkoutRestriction": false,
+                      "checkinRestriction": false
+                    },
+                    "RoomTypeCode": "0000000615",
+                    "NonSmoking": false
+                  }
+                ]
+              },
+              "TPA_Extensions": {
+                "LowestRatePlanId": "0000071185",
+                "DeepLinkInformation": {
+                  "overviewURL": "//www.travelguru.com/hotels/India/mumbai/parle-international-00000349?checkInDate=29-03-2019&checkOutDate=30-03-2019&numRooms=1&rooms[0].adult=2&rooms[0].children=1&rooms[0].child[0].age=10&currencyCode=INR"
+                },
+                "StopSell": false,
+                "PahSCRestriction": true,
+                "HotelBasicInformation": {
+                  "srpPriority": false,
+                  "featured": false,
+                  "yatraSmart": false,
+                  "Reviews": {
+                    "ReviewRating": 3.5,
+                    "ReviewCount": 22
+                  },
+                  "propertyType": "Hotels",
+                  "HotelType": "TGU",
+                  "Rank": 3
+                }
+              },
+              "RatePlans": {
+                "RatePlan": [
+                  {
+                    "RatePlanType": 24,
+                    "RatePlanInclusions": {
+                      "RatePlanInclusionDesciption": {
+                        "Text": [
+                          "Breakfast, Complimentary Wi-Fi Internet,",
+                          "Early Check-in / Late Check-out (Subject to Availability),"
+                        ]
+                      }
+                    },
+                    "TPA_Extensions": {
+                      "AdditionalGuests": {
+                        "AdditionalGuest": {
+                          "roomNo": 1,
+                          "children": 1,
+                          "adults": 0
+                        }
+                      },
+                      "DiscountCouponDisplayIndicator": {
+                        "Enabled": true
+                      }
+                    },
+                    "RatePlanDescription": {
+                      "Text": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "RatePlanName": "Executive Double Room Breakfast",
+                    "Guarantee": {
+                      "GuaranteeType": "PrePay"
+                    },
+                    "CancelPenalties": {
+                      "CancelPenalty": {
+                        "PenaltyDescription": {
+                          "Text": "N",
+                          "Name": "FREE_CANCELLATION"
+                        },
+                        "Deadline": "",
+                        "NonRefundable": true
+                      }
+                    },
+                    "AvailableQuantity": 10,
+                    "RatePlanCode": "0000107340"
+                  },
+                  {
+                    "RatePlanType": 24,
+                    "RatePlanInclusions": {
+                      "RatePlanInclusionDesciption": {
+                        "Text": [
+                          "Breakfast, Complimentary Wi-Fi Internet,",
+                          "Early Check-in / Late Check-out (Subject to Availability),"
+                        ]
+                      }
+                    },
+                    "TPA_Extensions": {
+                      "AdditionalGuests": {
+                        "AdditionalGuest": {
+                          "roomNo": 1,
+                          "children": 1,
+                          "adults": 0
+                        }
+                      },
+                      "DiscountCouponDisplayIndicator": {
+                        "Enabled": true
+                      }
+                    },
+                    "RatePlanDescription": {
+                      "Text": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "RatePlanName": "Club Room",
+                    "Guarantee": {
+                      "GuaranteeType": "PrePay"
+                    },
+                    "CancelPenalties": {
+                      "CancelPenalty": {
+                        "PenaltyDescription": {
+                          "Text": "N",
+                          "Name": "FREE_CANCELLATION"
+                        },
+                        "Deadline": "",
+                        "NonRefundable": true
+                      }
+                    },
+                    "AvailableQuantity": 10,
+                    "RatePlanCode": "0000692630"
+                  },
+                  {
+                    "RatePlanType": 24,
+                    "RatePlanInclusions": {
+                      "RatePlanInclusionDesciption": {
+                        "Text": [
+                          "Breakfast, Complimentary Wi-Fi Internet,",
+                          "Early Check-in / Late Check-out (Subject to Availability),"
+                        ]
+                      }
+                    },
+                    "TPA_Extensions": {
+                      "AdditionalGuests": {
+                        "AdditionalGuest": {
+                          "roomNo": 1,
+                          "children": 1,
+                          "adults": 0
+                        }
+                      },
+                      "DiscountCouponDisplayIndicator": {
+                        "Enabled": true
+                      }
+                    },
+                    "RatePlanDescription": {
+                      "Text": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "RatePlanName": "Suite Room",
+                    "Guarantee": {
+                      "GuaranteeType": "PrePay"
+                    },
+                    "CancelPenalties": {
+                      "CancelPenalty": {
+                        "PenaltyDescription": {
+                          "Text": "N",
+                          "Name": "FREE_CANCELLATION"
+                        },
+                        "Deadline": "",
+                        "NonRefundable": true
+                      }
+                    },
+                    "AvailableQuantity": 1,
+                    "RatePlanCode": "0000692632"
+                  },
+                  {
+                    "RatePlanType": 24,
+                    "RatePlanInclusions": {
+                      "RatePlanInclusionDesciption": {
+                        "Text": [
+                          "Breakfast, Complimentary Wi-Fi Internet,",
+                          "Early Check-in / Late Check-out (Subject to Availability),"
+                        ]
+                      }
+                    },
+                    "TPA_Extensions": {
+                      "AdditionalGuests": {
+                        "AdditionalGuest": {
+                          "roomNo": 1,
+                          "children": 1,
+                          "adults": 0
+                        }
+                      },
+                      "BestRatePlan": true,
+                      "DiscountCouponDisplayIndicator": {
+                        "Enabled": true
+                      }
+                    },
+                    "RatePlanDescription": {
+                      "Text": [
+                        "",
+                        ""
+                      ]
+                    },
+                    "RatePlanName": "Deluxe  Double Room Breakfast",
+                    "Guarantee": {
+                      "GuaranteeType": "PrePay"
+                    },
+                    "CancelPenalties": {
+                      "CancelPenalty": {
+                        "PenaltyDescription": {
+                          "Text": "N",
+                          "Name": "FREE_CANCELLATION"
+                        },
+                        "Deadline": "",
+                        "NonRefundable": true
+                      }
+                    },
+                    "AvailableQuantity": 20,
+                    "RatePlanCode": "0000071185"
+                  }
+                ]
+              },
+              "RoomRates": {
+                "RoomRate": [
+                  {
+                    "Rates": {
+                      "Rate": {
+                        "AdditionalGuestAmounts": {
+                          "AdditionalGuestAmount": {
+                            "Amount": {
+                              "AmountBeforeTax": 1000
+                            },
+                            "RPH": 1,
+                            "AgeQualifyingCode": 8
+                          }
+                        },
+                        "TPA_Extensions": {
+                          "Rate": {
+                            "BaseChildOccupancy": 0,
+                            "BaseAdultOccupancy": 2,
+                            "RoomTypeCode": "0000006018",
+                            "Bookable": true,
+                            "RatePlanCode": "0000107340"
+                          },
+                          "AffiliateCommission": {
+                            "Percent": 14,
+                            "Amount": 910,
+                            "HotelTaxIncluded": false
+                          }
+                        },
+                        "Base": {
+                          "AmountBeforeTax": 5500,
+                          "Taxes": {
+                            "Amount": 0
+                          }
+                        },
+                        "EffectiveDate": "2019-03-29T00:00:00.000+05:30"
+                      }
+                    },
+                    "GuestCounts": {
+                      "GuestCount": [
+                        {
+                          "Count": 2,
+                          "AgeQualifyingCode": 10
+                        },
+                        {
+                          "Count": 0,
+                          "AgeQualifyingCode": 8
+                        }
+                      ]
+                    },
+                    "Total": {
+                      "CurrencyCode": "INR"
+                    },
+                    "RoomID": "0000006018",
+                    "RatePlanCode": "0000107340"
+                  },
+                  {
+                    "Rates": {
+                      "Rate": {
+                        "AdditionalGuestAmounts": {
+                          "AdditionalGuestAmount": {
+                            "Amount": {
+                              "AmountBeforeTax": 1500
+                            },
+                            "RPH": 1,
+                            "AgeQualifyingCode": 8
+                          }
+                        },
+                        "TPA_Extensions": {
+                          "Rate": {
+                            "BaseChildOccupancy": 0,
+                            "BaseAdultOccupancy": 2,
+                            "RoomTypeCode": "0000185142",
+                            "Bookable": true,
+                            "RatePlanCode": "0000692630"
+                          },
+                          "AffiliateCommission": {
+                            "Percent": 14,
+                            "Amount": 980,
+                            "HotelTaxIncluded": false
+                          }
+                        },
+                        "Base": {
+                          "AmountBeforeTax": 5500,
+                          "Taxes": {
+                            "Amount": 1330,
+                            "Tax": {
+                              "Amount": 1330,
+                              "Code": 17
+                            }
+                          }
+                        },
+                        "EffectiveDate": "2019-03-29T00:00:00.000+05:30"
+                      }
+                    },
+                    "GuestCounts": {
+                      "GuestCount": [
+                        {
+                          "Count": 2,
+                          "AgeQualifyingCode": 10
+                        },
+                        {
+                          "Count": 0,
+                          "AgeQualifyingCode": 8
+                        }
+                      ]
+                    },
+                    "Total": {
+                      "CurrencyCode": "INR"
+                    },
+                    "RoomID": "0000185142",
+                    "RatePlanCode": "0000692630"
+                  },
+                  {
+                    "Rates": {
+                      "Rate": {
+                        "AdditionalGuestAmounts": {
+                          "AdditionalGuestAmount": {
+                            "Amount": {
+                              "AmountBeforeTax": 1500
+                            },
+                            "RPH": 1,
+                            "AgeQualifyingCode": 8
+                          }
+                        },
+                        "TPA_Extensions": {
+                          "Rate": {
+                            "BaseChildOccupancy": 0,
+                            "BaseAdultOccupancy": 2,
+                            "RoomTypeCode": "0000185143",
+                            "Bookable": true,
+                            "RatePlanCode": "0000692632"
+                          },
+                          "AffiliateCommission": {
+                            "Percent": 14,
+                            "Amount": 1330,
+                            "HotelTaxIncluded": false
+                          }
+                        },
+                        "Base": {
+                          "AmountBeforeTax": 8000,
+                          "Taxes": {
+                            "Amount": 1805,
+                            "Tax": {
+                              "Amount": 1805,
+                              "Code": 17
+                            }
+                          }
+                        },
+                        "EffectiveDate": "2019-03-29T00:00:00.000+05:30"
+                      }
+                    },
+                    "GuestCounts": {
+                      "GuestCount": [
+                        {
+                          "Count": 2,
+                          "AgeQualifyingCode": 10
+                        },
+                        {
+                          "Count": 0,
+                          "AgeQualifyingCode": 8
+                        }
+                      ]
+                    },
+                    "Total": {
+                      "CurrencyCode": "INR"
+                    },
+                    "RoomID": "0000185143",
+                    "RatePlanCode": "0000692632"
+                  },
+                  {
+                    "Rates": {
+                      "Rate": {
+                        "AdditionalGuestAmounts": {
+                          "AdditionalGuestAmount": {
+                            "Amount": {
+                              "AmountBeforeTax": 1000
+                            },
+                            "RPH": 1,
+                            "AgeQualifyingCode": 8
+                          }
+                        },
+                        "TPA_Extensions": {
+                          "Rate": {
+                            "BaseChildOccupancy": 0,
+                            "BaseAdultOccupancy": 2,
+                            "RoomTypeCode": "0000000615",
+                            "Bookable": true,
+                            "RatePlanCode": "0000071185"
+                          },
+                          "AffiliateCommission": {
+                            "Percent": 14,
+                            "Amount": 840,
+                            "HotelTaxIncluded": false
+                          }
+                        },
+                        "Base": {
+                          "AmountBeforeTax": 5000,
+                          "Taxes": {
+                            "Amount": 0
+                          }
+                        },
+                        "EffectiveDate": "2019-03-29T00:00:00.000+05:30"
+                      }
+                    },
+                    "GuestCounts": {
+                      "GuestCount": [
+                        {
+                          "Count": 2,
+                          "AgeQualifyingCode": 10
+                        },
+                        {
+                          "Count": 0,
+                          "AgeQualifyingCode": 8
+                        }
+                      ]
+                    },
+                    "Total": {
+                      "CurrencyCode": "INR"
+                    },
+                    "RoomID": "0000000615",
+                    "RatePlanCode": "0000071185"
+                  }
+                ]
+              }
             }
-         },
-         "TPA_Extensions": {
-            "HotelsInfo": {
-               "available": "474",
-               "cacheable": "true",
-               "deals": "20",
-               "maxPrice": "53001.00",
-               "minPrice": "400.00",
-               "total": "0"
-            }
-         }
+          ]
+        },
+        "TPA_Extensions": {
+          "HotelsInfo": {
+            "total": 0,
+            "deals": 19,
+            "minPrice": 450,
+            "available": 397,
+            "cacheable": true,
+            "maxPrice": 53001
+          }
+        },
+        "CorrelationID": "a2fea4af-2445-4448-b788-8a93327525a9",
+        "PrimaryLangID": "en",
+        "AltLangID": "en",
+        "Success": ""
       }
-   }
+    }
+  }
 }

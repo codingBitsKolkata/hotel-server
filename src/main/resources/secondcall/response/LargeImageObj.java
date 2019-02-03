@@ -1,31 +1,31 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class LargeImageObj {
 
-    @SerializedName("caption")
-    @Expose
+    @JsonProperty("caption")
+    
     public String caption;
-    @SerializedName("category")
-    @Expose
+    @JsonProperty("category")
+    
     public String category;
-    @SerializedName("height")
-    @Expose
+    @JsonProperty("height")
+    
     public String height;
-    @SerializedName("sizeName")
-    @Expose
+    @JsonProperty("sizeName")
+    
     public String sizeName;
-    @SerializedName("subCategory")
-    @Expose
+    @JsonProperty("subCategory")
+    
     public String subCategory;
-    @SerializedName("url")
-    @Expose
+    @JsonProperty("url")
+    
     public String url;
-    @SerializedName("width")
-    @Expose
+    @JsonProperty("width")
+    
     public String width;
 
 }

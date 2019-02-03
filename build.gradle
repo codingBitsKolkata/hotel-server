@@ -73,6 +73,7 @@ dependencies {
 	compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.11'
 	compile group: 'org.apache.tika', name: 'tika-core', version: '1.19.1'
 	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.8'
 	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.9.8'
 	compile group: 'org.json', name: 'json', version: '20180813'
 	compile group: 'org.jsonschema2pojo', name: 'jsonschema2pojo-core', version: '1.0.0'
@@ -82,6 +83,10 @@ dependencies {
 	compile group: 'javax.xml.ws', name: 'jaxws-api', version: '2.3.1'
 	compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.13'
 	compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+	compile group: 'org.jvnet.jaxb2.maven2', name: 'maven-jaxb2-plugin', version: '0.14.0'
+	compile group: 'org.springframework', name: 'spring-oxm', version: '3.0.0.RELEASE'
+	compile group: 'org.springframework.ws', name: 'spring-ws-core', version: '2.2.0.RELEASE'
+
 
 	testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
 	testCompile('org.springframework.boot:spring-boot-starter-test')

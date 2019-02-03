@@ -2,16 +2,16 @@
 package secondcall.response;
 
 import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Amenities {
 
-    @SerializedName("PropertyAmenities")
-    @Expose
+    @JsonProperty("PropertyAmenities")
+    
     public List<PropertyAmenity> propertyAmenities = null;
-    @SerializedName("RoomAmenities")
-    @Expose
+    @JsonProperty("RoomAmenities")
+    
     public List<RoomAmenity> roomAmenities = null;
 
 }

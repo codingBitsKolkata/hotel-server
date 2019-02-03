@@ -42,6 +42,8 @@ import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.json.JSONObject;
+import org.json.XML;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -49,12 +51,28 @@ import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 
 @Component
 public class Util {
 
 	private static final Logger logger = LogManager.getLogger(Util.class);
 
+	public static String xmlToJSON(String xml) throws Exception {
+		
+		 JSONObject xmlJSONObj = XML.toJSONObject(xml);
+         String json = xmlJSONObj.toString();
+         return json;
+         
+	}
+	
+	public static String jsonToXML(String json) throws Exception {
+		
+		JSONObject jsonObject = new JSONObject(json);
+		String xml = XML.toString(jsonObject);
+		return xml;
+	}
+	
 	public static<T> T transform(Object from, Class<T> valueType) throws Exception {
 		
 		ObjectMapper objectMapper = new ObjectMapper();
@@ -77,13 +95,10 @@ public class Util {
 	public static<T> T jsonToObject(String value, Class<T> t) throws Exception {
 		
 		if(t != null && StringUtils.isNotBlank(value)) {
-			ObjectMapper objectMapper = new ObjectMapper();
-			objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-			return objectMapper.readValue(value, t);
+			return new Gson().fromJson(value, t);
 		} else {
 			return null;
 		}
-		
 	}
 	
 	public static boolean checkDate(String startDate) {

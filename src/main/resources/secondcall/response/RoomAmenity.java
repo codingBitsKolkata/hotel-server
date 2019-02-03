@@ -1,16 +1,16 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class RoomAmenity {
 
-    @SerializedName("code")
-    @Expose
+    @JsonProperty("code")
+    
     public String code;
-    @SerializedName("description")
-    @Expose
+    @JsonProperty("description")
+    
     public String description;
 
 }

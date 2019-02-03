@@ -1,19 +1,19 @@
 
 package secondcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class TPAExtensions {
 
-    @SerializedName("SeoEnabled")
-    @Expose
+    @JsonProperty("SeoEnabled")
+    
     public String seoEnabled;
-    @SerializedName("Pagination")
-    @Expose
+    @JsonProperty("Pagination")
+    
     public Pagination pagination;
-    @SerializedName("UserAuthentication")
-    @Expose
+    @JsonProperty("UserAuthentication")
+    
     public UserAuthentication userAuthentication;
 
 }

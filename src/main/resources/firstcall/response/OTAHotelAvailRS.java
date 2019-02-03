@@ -1,28 +1,28 @@
 
 package firstcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class OTAHotelAvailRS {
 
-    @SerializedName("CorrelationID")
-    @Expose
+    @JsonProperty("CorrelationID")
+    
     public String correlationID;
-    @SerializedName("PrimaryLangID")
-    @Expose
+    @JsonProperty("PrimaryLangID")
+    
     public String primaryLangID;
-    @SerializedName("AltLangID")
-    @Expose
+    @JsonProperty("AltLangID")
+    
     public String altLangID;
-    @SerializedName("Success")
-    @Expose
+    @JsonProperty("Success")
+    
     public Object success;
-    @SerializedName("RoomStays")
-    @Expose
+    @JsonProperty("RoomStays")
+    
     public RoomStays roomStays;
-    @SerializedName("TPA_Extensions")
-    @Expose
+    @JsonProperty("TPA_Extensions")
+    
     public TPAExtensions____ tPAExtensions;
 
 }

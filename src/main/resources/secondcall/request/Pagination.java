@@ -1,16 +1,16 @@
 
 package secondcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Pagination {
 
-    @SerializedName("hotelsFrom")
-    @Expose
+    @JsonProperty("hotelsFrom")
+    
     public String hotelsFrom;
-    @SerializedName("hotelsTo")
-    @Expose
+    @JsonProperty("hotelsTo")
+    
     public String hotelsTo;
 
 }

@@ -1,13 +1,13 @@
 
 package secondcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class HotelRef {
 
-    @SerializedName("HotelCode")
-    @Expose
+    @JsonProperty("HotelCode")
+    
     public String hotelCode;
 
 }

@@ -1,8 +1,12 @@
+
 package com.hotelserver.model.firstresponse;
+
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -15,12 +19,9 @@ import lombok.ToString;
 @ToString
 @JsonInclude(Include.NON_NULL)
 public class GuestCounts {
-	@JsonProperty("GuestCount")
-	private GuestCount[] GuestCount;
 
-	// @Override
-	// public String toString()
-	// {
-	// return "ClassPojo [GuestCount = "+GuestCount+"]";
-	// }
+    @SerializedName("GuestCount")
+    @Expose
+    public List<GuestCount> guestCount = null;
+
 }

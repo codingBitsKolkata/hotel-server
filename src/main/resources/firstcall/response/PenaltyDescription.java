@@ -1,16 +1,16 @@
 
 package firstcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class PenaltyDescription {
 
-    @SerializedName("Name")
-    @Expose
+    @JsonProperty("Name")
+    
     public String name;
-    @SerializedName("Text")
-    @Expose
+    @JsonProperty("Text")
+    
     public String text;
 
 }

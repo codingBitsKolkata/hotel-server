@@ -1,16 +1,16 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class HotelPOus {
 
-    @SerializedName("POIDistance")
-    @Expose
+    @JsonProperty("POIDistance")
+    
     public String pOIDistance;
-    @SerializedName("POIName")
-    @Expose
+    @JsonProperty("POIName")
+    
     public String pOIName;
 
 }

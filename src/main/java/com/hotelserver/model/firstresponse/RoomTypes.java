@@ -1,8 +1,12 @@
+
 package com.hotelserver.model.firstresponse;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -14,16 +18,10 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = false)
 @ToString
 @JsonInclude(Include.NON_NULL)
-public class RoomTypes
-{
+public class RoomTypes {
 
-	@JsonProperty("RoomType")
-	private RoomType RoomType;
+    @SerializedName("RoomType")
+    @Expose
+    public List<RoomType> roomType = null;
 
-
-//    @Override
-//    public String toString()
-//    {
-//        return "ClassPojo [RoomType = "+RoomType+"]";
-//    }
 }

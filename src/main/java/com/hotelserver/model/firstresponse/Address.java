@@ -1,8 +1,10 @@
+
 package com.hotelserver.model.firstresponse;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -14,20 +16,16 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = false)
 @ToString
 @JsonInclude(Include.NON_NULL)
-public class Address
-{
-	@JsonProperty("CountryName")
-	private String CountryName;
+public class Address {
 
-	@JsonProperty("StateProv")
-	private StateProv StateProv;
+    @SerializedName("CountryName")
+    @Expose
+    public String countryName;
+    @SerializedName("StateProv")
+    @Expose
+    public StateProv stateProv;
+    @SerializedName("CityName")
+    @Expose
+    public String cityName;
 
-	@JsonProperty("CityName")
-	private String CityName;
-    
-    /*@Override
-    public String toString()
-    {
-        return "ClassPojo [CountryName = "+CountryName+", StateProv = "+StateProv+", CityName = "+CityName+"]";
-    }*/
 }

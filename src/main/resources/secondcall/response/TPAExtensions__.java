@@ -1,16 +1,16 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class TPAExtensions__ {
 
-    @SerializedName("Rate")
-    @Expose
+    @JsonProperty("Rate")
+    
     public Rate_ rate;
-    @SerializedName("AffiliateCommission")
-    @Expose
+    @JsonProperty("AffiliateCommission")
+    
     public AffiliateCommission affiliateCommission;
 
 }

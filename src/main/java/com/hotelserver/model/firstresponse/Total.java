@@ -1,24 +1,25 @@
+
 package com.hotelserver.model.firstresponse;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-public class Total
-{
-    private String CurrencyCode;
+@Getter
+@Setter
+@EqualsAndHashCode(callSuper = false)
+@ToString
+@JsonInclude(Include.NON_NULL)
+public class Total {
 
-    public String getCurrencyCode ()
-    {
-        return CurrencyCode;
-    }
+    @SerializedName("CurrencyCode")
+    @Expose
+    public String currencyCode;
 
-    public void setCurrencyCode (String CurrencyCode)
-    {
-        this.CurrencyCode = CurrencyCode;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "ClassPojo [CurrencyCode = "+CurrencyCode+"]";
-    }
 }

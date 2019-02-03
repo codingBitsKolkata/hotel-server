@@ -1,22 +1,22 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Occupancy {
 
-    @SerializedName("MaxOccupancy")
-    @Expose
+    @JsonProperty("MaxOccupancy")
+    
     public String maxOccupancy;
-    @SerializedName("AgeQualifyingCode")
-    @Expose
+    @JsonProperty("AgeQualifyingCode")
+    
     public String ageQualifyingCode;
-    @SerializedName("MaxAge")
-    @Expose
+    @JsonProperty("MaxAge")
+    
     public String maxAge;
-    @SerializedName("MinAge")
-    @Expose
+    @JsonProperty("MinAge")
+    
     public String minAge;
 
 }

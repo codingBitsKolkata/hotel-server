@@ -2,22 +2,22 @@
 package secondcall.response;
 
 import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class CancelPenalty {
 
-    @SerializedName("NonRefundable")
-    @Expose
+    @JsonProperty("NonRefundable")
+    
     public String nonRefundable;
-    @SerializedName("Deadline")
-    @Expose
+    @JsonProperty("Deadline")
+    
     public Deadline deadline;
-    @SerializedName("PenaltyDescription")
-    @Expose
+    @JsonProperty("PenaltyDescription")
+    
     public List<PenaltyDescription> penaltyDescription = null;
-    @SerializedName("AmountPercent")
-    @Expose
+    @JsonProperty("AmountPercent")
+    
     public AmountPercent amountPercent;
 
 }

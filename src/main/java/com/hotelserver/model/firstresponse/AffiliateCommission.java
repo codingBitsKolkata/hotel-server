@@ -1,8 +1,10 @@
+
 package com.hotelserver.model.firstresponse;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -14,22 +16,16 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = false)
 @ToString
 @JsonInclude(Include.NON_NULL)
+public class AffiliateCommission {
 
-public class AffiliateCommission
-{
-	@JsonProperty("Amount")
-	private String Amount;
+    @SerializedName("Percent")
+    @Expose
+    public Integer percent;
+    @SerializedName("Amount")
+    @Expose
+    public Integer amount;
+    @SerializedName("HotelTaxIncluded")
+    @Expose
+    public Boolean hotelTaxIncluded;
 
-	@JsonProperty("Percent")
-	private String Percent;
-
-	@JsonProperty("HotelTaxIncluded")
-	private String HotelTaxIncluded;
-
-
-   /* @Override
-    public String toString()
-    {
-        return "ClassPojo [Amount = "+Amount+", Percent = "+Percent+", HotelTaxIncluded = "+HotelTaxIncluded+"]";
-    }*/
 }

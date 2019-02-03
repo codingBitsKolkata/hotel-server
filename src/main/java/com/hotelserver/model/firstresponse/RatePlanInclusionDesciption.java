@@ -1,8 +1,12 @@
+
 package com.hotelserver.model.firstresponse;
+
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -16,12 +20,8 @@ import lombok.ToString;
 @JsonInclude(Include.NON_NULL)
 public class RatePlanInclusionDesciption {
 
-	@JsonProperty("Text")
-	private String[] Text;
+    @SerializedName("Text")
+    @Expose
+    public List<String> text = null;
 
-	// @Override
-	// public String toString()
-	// {
-	// return "ClassPojo [Text = "+Text+"]";
-	// }
 }

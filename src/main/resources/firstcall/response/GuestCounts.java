@@ -2,13 +2,13 @@
 package firstcall.response;
 
 import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class GuestCounts {
 
-    @SerializedName("GuestCount")
-    @Expose
+    @JsonProperty("GuestCount")
+    
     public List<GuestCount> guestCount = null;
 
 }

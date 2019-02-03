@@ -2,16 +2,16 @@
 package firstcall.response;
 
 import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class RoomDescription {
 
-    @SerializedName("Text")
-    @Expose
+    @JsonProperty("Text")
+    
     public Object text;
-    @SerializedName("Image")
-    @Expose
+    @JsonProperty("Image")
+    
     public List<Object> image = null;
 
 }

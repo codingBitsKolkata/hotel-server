@@ -1,19 +1,19 @@
 
 package firstcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class UserAuthentication {
 
-    @SerializedName("password")
-    @Expose
+    @JsonProperty("password")
+    
     public String password;
-    @SerializedName("propertyId")
-    @Expose
+    @JsonProperty("propertyId")
+    
     public String propertyId;
-    @SerializedName("username")
-    @Expose
+    @JsonProperty("username")
+    
     public String username;
 
 }

@@ -1,8 +1,10 @@
+
 package com.hotelserver.model.firstresponse;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -16,12 +18,8 @@ import lombok.ToString;
 @JsonInclude(Include.NON_NULL)
 public class Rates {
 
-	@JsonProperty("Rate")
-	private Rate Rate;
+    @SerializedName("Rate")
+    @Expose
+    public Rate rate;
 
-	// @Override
-	// public String toString()
-	// {
-	// return "ClassPojo [Rate = "+Rate+"]";
-	// }
 }

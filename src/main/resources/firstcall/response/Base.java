@@ -1,16 +1,16 @@
 
 package firstcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Base {
 
-    @SerializedName("AmountBeforeTax")
-    @Expose
+    @JsonProperty("AmountBeforeTax")
+    
     public String amountBeforeTax;
-    @SerializedName("Taxes")
-    @Expose
+    @JsonProperty("Taxes")
+    
     public Taxes taxes;
 
 }

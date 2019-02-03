@@ -1,16 +1,16 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class TPAExtensions_ {
 
-    @SerializedName("DiscountCouponDisplayIndicator")
-    @Expose
+    @JsonProperty("DiscountCouponDisplayIndicator")
+    
     public DiscountCouponDisplayIndicator discountCouponDisplayIndicator;
-    @SerializedName("BestRatePlan")
-    @Expose
+    @JsonProperty("BestRatePlan")
+    
     public String bestRatePlan;
 
 }

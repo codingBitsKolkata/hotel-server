@@ -1,13 +1,13 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class RatePlanInclusions {
 
-    @SerializedName("RatePlanInclusionDesciption")
-    @Expose
+    @JsonProperty("RatePlanInclusionDesciption")
+    
     public RatePlanInclusionDesciption ratePlanInclusionDesciption;
 
 }

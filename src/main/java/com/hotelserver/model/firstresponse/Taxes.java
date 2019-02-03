@@ -1,24 +1,28 @@
+
 package com.hotelserver.model.firstresponse;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-public class Taxes
-{
-    private String Amount;
+@Getter
+@Setter
+@EqualsAndHashCode(callSuper = false)
+@ToString
+@JsonInclude(Include.NON_NULL)
+public class Taxes {
 
-    public String getAmount ()
-    {
-        return Amount;
-    }
+    @SerializedName("Amount")
+    @Expose
+    public Integer amount;
+    @SerializedName("Tax")
+    @Expose
+    public Tax tax;
 
-    public void setAmount (String Amount)
-    {
-        this.Amount = Amount;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "ClassPojo [Amount = "+Amount+"]";
-    }
 }

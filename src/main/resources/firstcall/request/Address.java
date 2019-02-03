@@ -1,16 +1,16 @@
 
 package firstcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Address {
 
-    @SerializedName("CityName")
-    @Expose
+    @JsonProperty("CityName")
+    
     public String cityName;
-    @SerializedName("CountryName")
-    @Expose
+    @JsonProperty("CountryName")
+    
     public CountryName countryName;
 
 }

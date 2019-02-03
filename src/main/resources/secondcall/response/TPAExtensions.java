@@ -1,19 +1,19 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class TPAExtensions {
 
-    @SerializedName("checkinRestriction")
-    @Expose
+    @JsonProperty("checkinRestriction")
+    
     public String checkinRestriction;
-    @SerializedName("checkoutRestriction")
-    @Expose
+    @JsonProperty("checkoutRestriction")
+    
     public String checkoutRestriction;
-    @SerializedName("RoomType")
-    @Expose
+    @JsonProperty("RoomType")
+    
     public RoomType_ roomType;
 
 }

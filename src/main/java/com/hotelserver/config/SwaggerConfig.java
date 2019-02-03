@@ -21,7 +21,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(getApiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.orastays.hotelserver.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.hotelserver.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

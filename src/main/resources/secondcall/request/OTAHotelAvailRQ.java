@@ -1,22 +1,22 @@
 
 package secondcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class OTAHotelAvailRQ {
 
-    @SerializedName("RequestedCurrency")
-    @Expose
+    @JsonProperty("RequestedCurrency")
+    
     public String requestedCurrency;
-    @SerializedName("CorrelationID")
-    @Expose
+    @JsonProperty("CorrelationID")
+    
     public String correlationID;
-    @SerializedName("SearchCacheLevel")
-    @Expose
+    @JsonProperty("SearchCacheLevel")
+    
     public String searchCacheLevel;
-    @SerializedName("AvailRequestSegments")
-    @Expose
+    @JsonProperty("AvailRequestSegments")
+    
     public AvailRequestSegments availRequestSegments;
 
 }

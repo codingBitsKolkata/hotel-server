@@ -1,28 +1,28 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class BasicPropertyInfo {
 
-    @SerializedName("CurrencyCode")
-    @Expose
+    @JsonProperty("CurrencyCode")
+    
     public String currencyCode;
-    @SerializedName("HotelCode")
-    @Expose
+    @JsonProperty("HotelCode")
+    
     public String hotelCode;
-    @SerializedName("HotelName")
-    @Expose
+    @JsonProperty("HotelName")
+    
     public String hotelName;
-    @SerializedName("Position")
-    @Expose
+    @JsonProperty("Position")
+    
     public Position position;
-    @SerializedName("Address")
-    @Expose
+    @JsonProperty("Address")
+    
     public Address address;
-    @SerializedName("Award")
-    @Expose
+    @JsonProperty("Award")
+    
     public Award award;
 
 }

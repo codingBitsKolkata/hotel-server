@@ -1,19 +1,19 @@
 
 package firstcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class CancelPenalty {
 
-    @SerializedName("NonRefundable")
-    @Expose
+    @JsonProperty("NonRefundable")
+    
     public String nonRefundable;
-    @SerializedName("Deadline")
-    @Expose
+    @JsonProperty("Deadline")
+    
     public Object deadline;
-    @SerializedName("PenaltyDescription")
-    @Expose
+    @JsonProperty("PenaltyDescription")
+    
     public PenaltyDescription penaltyDescription;
 
 }

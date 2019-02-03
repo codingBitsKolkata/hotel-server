@@ -1,13 +1,13 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Guarantee {
 
-    @SerializedName("GuaranteeType")
-    @Expose
+    @JsonProperty("GuaranteeType")
+    
     public String guaranteeType;
 
 }

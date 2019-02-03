@@ -2,13 +2,13 @@
 package firstcall.response;
 
 import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class RoomRates {
 
-    @SerializedName("RoomRate")
-    @Expose
+    @JsonProperty("RoomRate")
+    
     public List<RoomRate> roomRate = null;
 
 }

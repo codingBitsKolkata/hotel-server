@@ -1,8 +1,10 @@
+
 package com.hotelserver.model.firstresponse;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -15,24 +17,24 @@ import lombok.ToString;
 @ToString
 @JsonInclude(Include.NON_NULL)
 public class HotelsInfo {
-	@JsonProperty("total")
-	private String total;
-	@JsonProperty("available")
-	private String available;
-	@JsonProperty("maxPrice")
-	private String maxPrice;
-	@JsonProperty("deals")
-	private String deals;
-	@JsonProperty("cacheable")
-	private String cacheable;
-	@JsonProperty("minPrice")
-	private String minPrice;
 
-	// @Override
-	// public String toString()
-	// {
-	// return "ClassPojo [total = "+total+", available = "+available+", maxPrice =
-	// "+maxPrice+", deals = "+deals+", cacheable = "+cacheable+", minPrice =
-	// "+minPrice+"]";
-	// }
+    @SerializedName("total")
+    @Expose
+    public Integer total;
+    @SerializedName("deals")
+    @Expose
+    public Integer deals;
+    @SerializedName("minPrice")
+    @Expose
+    public Integer minPrice;
+    @SerializedName("available")
+    @Expose
+    public Integer available;
+    @SerializedName("cacheable")
+    @Expose
+    public Boolean cacheable;
+    @SerializedName("maxPrice")
+    @Expose
+    public Integer maxPrice;
+
 }

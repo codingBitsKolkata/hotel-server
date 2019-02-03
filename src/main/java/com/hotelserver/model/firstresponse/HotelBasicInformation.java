@@ -1,8 +1,10 @@
+
 package com.hotelserver.model.firstresponse;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -15,26 +17,27 @@ import lombok.ToString;
 @ToString
 @JsonInclude(Include.NON_NULL)
 public class HotelBasicInformation {
-	@JsonProperty("propertyType")
-	private String propertyType;
-	@JsonProperty("Rank")
-	private String Rank;
-	@JsonProperty("srpPriority")
-	private String srpPriority;
-	@JsonProperty("Reviews")
-	private String Reviews;
-	@JsonProperty("HotelType")
-	private String HotelType;
-	@JsonProperty("yatraSmart")
-	private String yatraSmart;
-	@JsonProperty("featured")
-	private String featured;
 
-	// @Override
-	// public String toString()
-	// {
-	// return "ClassPojo [propertyType = "+propertyType+", Rank = "+Rank+",
-	// srpPriority = "+srpPriority+", Reviews = "+Reviews+", HotelType =
-	// "+HotelType+", yatraSmart = "+yatraSmart+", featured = "+featured+"]";
-	// }
+    @SerializedName("srpPriority")
+    @Expose
+    public Boolean srpPriority;
+    @SerializedName("featured")
+    @Expose
+    public Boolean featured;
+    @SerializedName("yatraSmart")
+    @Expose
+    public Boolean yatraSmart;
+    @SerializedName("propertyType")
+    @Expose
+    public String propertyType;
+    @SerializedName("HotelType")
+    @Expose
+    public String hotelType;
+    @SerializedName("Rank")
+    @Expose
+    public Integer rank;
+    @SerializedName("Reviews")
+    @Expose
+    public Reviews reviews;
+
 }

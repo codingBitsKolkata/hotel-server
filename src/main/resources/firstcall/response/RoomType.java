@@ -2,31 +2,31 @@
 package firstcall.response;
 
 import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class RoomType {
 
-    @SerializedName("NonSmoking")
-    @Expose
+    @JsonProperty("NonSmoking")
+    
     public String nonSmoking;
-    @SerializedName("RoomType")
-    @Expose
+    @JsonProperty("RoomType")
+    
     public String roomType;
-    @SerializedName("RoomTypeCode")
-    @Expose
+    @JsonProperty("RoomTypeCode")
+    
     public String roomTypeCode;
-    @SerializedName("RoomDescription")
-    @Expose
+    @JsonProperty("RoomDescription")
+    
     public RoomDescription roomDescription;
-    @SerializedName("AdditionalDetails")
-    @Expose
+    @JsonProperty("AdditionalDetails")
+    
     public Object additionalDetails;
-    @SerializedName("Occupancy")
-    @Expose
+    @JsonProperty("Occupancy")
+    
     public List<Occupancy> occupancy = null;
-    @SerializedName("TPA_Extensions")
-    @Expose
+    @JsonProperty("TPA_Extensions")
+    
     public TPAExtensions tPAExtensions;
 
 }

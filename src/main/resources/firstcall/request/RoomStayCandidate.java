@@ -1,13 +1,13 @@
 
 package firstcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class RoomStayCandidate {
 
-    @SerializedName("GuestCounts")
-    @Expose
+    @JsonProperty("GuestCounts")
+    
     public GuestCounts guestCounts;
 
 }

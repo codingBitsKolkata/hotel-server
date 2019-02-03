@@ -1,19 +1,19 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class AmountPercent {
 
-    @SerializedName("NmbrOfNights")
-    @Expose
+    @JsonProperty("NmbrOfNights")
+    
     public String nmbrOfNights;
-    @SerializedName("TaxInclusive")
-    @Expose
+    @JsonProperty("TaxInclusive")
+    
     public String taxInclusive;
-    @SerializedName("Amount")
-    @Expose
+    @JsonProperty("Amount")
+    
     public String amount;
 
 }

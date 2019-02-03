@@ -11,8 +11,8 @@ import lombok.ToString;
 @Setter
 @EqualsAndHashCode(callSuper = false)
 @ToString
-public class City
-{
+public class City {
+	
 	@JsonProperty("Cities")
 	private Cities Cities;
 }

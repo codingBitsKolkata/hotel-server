@@ -1,8 +1,10 @@
+
 package com.hotelserver.model.firstresponse;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -14,28 +16,22 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = false)
 @ToString
 @JsonInclude(Include.NON_NULL)
-public class RoomStay
-{
+public class RoomStay {
 
-	@JsonProperty("RoomRates")
-	private RoomRates RoomRates;
+    @SerializedName("BasicPropertyInfo")
+    @Expose
+    public BasicPropertyInfo basicPropertyInfo;
+    @SerializedName("RoomTypes")
+    @Expose
+    public RoomTypes roomTypes;
+    @SerializedName("TPA_Extensions")
+    @Expose
+    public TPAExtensions_ tPAExtensions;
+    @SerializedName("RatePlans")
+    @Expose
+    public RatePlans ratePlans;
+    @SerializedName("RoomRates")
+    @Expose
+    public RoomRates roomRates;
 
-	@JsonProperty("RoomTypes")
-    private RoomTypes RoomTypes;
-
-	@JsonProperty("BasicPropertyInfo")
-    private BasicPropertyInfo BasicPropertyInfo;
-
-	@JsonProperty("RatePlans")
-    private RatePlans RatePlans;
-
-	@JsonProperty("TPA_Extensions")
-    private TPA_Extensions TPA_Extensions;
-
-
-//    @Override
-//    public String toString()
-//    {
-//        return "ClassPojo [RoomRates = "+RoomRates+", RoomTypes = "+RoomTypes+", BasicPropertyInfo = "+BasicPropertyInfo+", RatePlans = "+RatePlans+", TPA_Extensions = "+TPA_Extensions+"]";
-//    }
 }

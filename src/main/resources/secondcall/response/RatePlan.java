@@ -1,37 +1,37 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class RatePlan {
 
-    @SerializedName("AvailableQuantity")
-    @Expose
+    @JsonProperty("AvailableQuantity")
+    
     public String availableQuantity;
-    @SerializedName("RatePlanCode")
-    @Expose
+    @JsonProperty("RatePlanCode")
+    
     public String ratePlanCode;
-    @SerializedName("RatePlanName")
-    @Expose
+    @JsonProperty("RatePlanName")
+    
     public String ratePlanName;
-    @SerializedName("RatePlanType")
-    @Expose
+    @JsonProperty("RatePlanType")
+    
     public String ratePlanType;
-    @SerializedName("Guarantee")
-    @Expose
+    @JsonProperty("Guarantee")
+    
     public Guarantee guarantee;
-    @SerializedName("CancelPenalties")
-    @Expose
+    @JsonProperty("CancelPenalties")
+    
     public CancelPenalties cancelPenalties;
-    @SerializedName("RatePlanDescription")
-    @Expose
+    @JsonProperty("RatePlanDescription")
+    
     public RatePlanDescription ratePlanDescription;
-    @SerializedName("RatePlanInclusions")
-    @Expose
+    @JsonProperty("RatePlanInclusions")
+    
     public RatePlanInclusions ratePlanInclusions;
-    @SerializedName("TPA_Extensions")
-    @Expose
+    @JsonProperty("TPA_Extensions")
+    
     public TPAExtensions_ tPAExtensions;
 
 }

@@ -1,13 +1,13 @@
 
 package firstcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Total {
 
-    @SerializedName("CurrencyCode")
-    @Expose
+    @JsonProperty("CurrencyCode")
+    
     public String currencyCode;
 
 }

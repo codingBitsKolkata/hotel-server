@@ -1,19 +1,19 @@
 
 package firstcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class TPAExtensions {
 
-    @SerializedName("Pagination")
-    @Expose
+    @JsonProperty("Pagination")
+    
     public Pagination pagination;
-    @SerializedName("HotelBasicInformation")
-    @Expose
+    @JsonProperty("HotelBasicInformation")
+    
     public HotelBasicInformation hotelBasicInformation;
-    @SerializedName("UserAuthentication")
-    @Expose
+    @JsonProperty("UserAuthentication")
+    
     public UserAuthentication userAuthentication;
 
 }

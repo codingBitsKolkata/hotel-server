@@ -1,8 +1,10 @@
+
 package com.hotelserver.model.firstresponse;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -15,15 +17,18 @@ import lombok.ToString;
 @ToString
 @JsonInclude(Include.NON_NULL)
 public class Occupancy {
-	@JsonProperty("MaxOccupancy")
-	private String MaxOccupancy;
-	@JsonProperty("AgeQualifyingCode")
-	private String AgeQualifyingCode;
 
-	// @Override
-	// public String toString()
-	// {
-	// return "ClassPojo [MaxOccupancy = "+MaxOccupancy+", AgeQualifyingCode =
-	// "+AgeQualifyingCode+"]";
-	// }
+    @SerializedName("MaxOccupancy")
+    @Expose
+    public Integer maxOccupancy;
+    @SerializedName("AgeQualifyingCode")
+    @Expose
+    public Integer ageQualifyingCode;
+    @SerializedName("MinAge")
+    @Expose
+    public Integer minAge;
+    @SerializedName("MaxAge")
+    @Expose
+    public Integer maxAge;
+
 }

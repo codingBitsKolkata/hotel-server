@@ -1,16 +1,16 @@
 
 package secondcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class StayDateRange {
 
-    @SerializedName("End")
-    @Expose
+    @JsonProperty("End")
+    
     public String end;
-    @SerializedName("Start")
-    @Expose
+    @JsonProperty("Start")
+    
     public String start;
 
 }

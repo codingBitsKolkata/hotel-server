@@ -1,16 +1,16 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Position {
 
-    @SerializedName("Latitude")
-    @Expose
+    @JsonProperty("Latitude")
+    
     public String latitude;
-    @SerializedName("Longitude")
-    @Expose
+    @JsonProperty("Longitude")
+    
     public String longitude;
 
 }

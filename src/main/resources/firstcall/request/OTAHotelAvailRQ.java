@@ -1,28 +1,28 @@
 
 package firstcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class OTAHotelAvailRQ {
 
-    @SerializedName("RequestedCurrency")
-    @Expose
+    @JsonProperty("RequestedCurrency")
+    
     public String requestedCurrency;
-    @SerializedName("SortOrder")
-    @Expose
+    @JsonProperty("SortOrder")
+    
     public String sortOrder;
-    @SerializedName("Version")
-    @Expose
+    @JsonProperty("Version")
+    
     public String version;
-    @SerializedName("PrimaryLangID")
-    @Expose
+    @JsonProperty("PrimaryLangID")
+    
     public String primaryLangID;
-    @SerializedName("SearchCacheLevel")
-    @Expose
+    @JsonProperty("SearchCacheLevel")
+    
     public String searchCacheLevel;
-    @SerializedName("AvailRequestSegments")
-    @Expose
+    @JsonProperty("AvailRequestSegments")
+    
     public AvailRequestSegments availRequestSegments;
 
 }

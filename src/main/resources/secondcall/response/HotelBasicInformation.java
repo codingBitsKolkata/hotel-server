@@ -2,70 +2,70 @@
 package secondcall.response;
 
 import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class HotelBasicInformation {
 
-    @SerializedName("AmenityDescription")
-    @Expose
+    @JsonProperty("AmenityDescription")
+    
     public String amenityDescription;
-    @SerializedName("Area")
-    @Expose
+    @JsonProperty("Area")
+    
     public String area;
-    @SerializedName("AreaSeoId")
-    @Expose
+    @JsonProperty("AreaSeoId")
+    
     public String areaSeoId;
-    @SerializedName("CheckInTime")
-    @Expose
+    @JsonProperty("CheckInTime")
+    
     public String checkInTime;
-    @SerializedName("CheckOutTime")
-    @Expose
+    @JsonProperty("CheckOutTime")
+    
     public String checkOutTime;
-    @SerializedName("CitySeoId")
-    @Expose
+    @JsonProperty("CitySeoId")
+    
     public String citySeoId;
-    @SerializedName("Description")
-    @Expose
+    @JsonProperty("Description")
+    
     public String description;
-    @SerializedName("HotelCategory")
-    @Expose
+    @JsonProperty("HotelCategory")
+    
     public String hotelCategory;
-    @SerializedName("HotelType")
-    @Expose
+    @JsonProperty("HotelType")
+    
     public String hotelType;
-    @SerializedName("NumberOfFloors")
-    @Expose
+    @JsonProperty("NumberOfFloors")
+    
     public String numberOfFloors;
-    @SerializedName("NumberOfRooms")
-    @Expose
+    @JsonProperty("NumberOfRooms")
+    
     public String numberOfRooms;
-    @SerializedName("StateSeoId")
-    @Expose
+    @JsonProperty("StateSeoId")
+    
     public String stateSeoId;
-    @SerializedName("isFlexibleCheckIn")
-    @Expose
+    @JsonProperty("isFlexibleCheckIn")
+    
     public String isFlexibleCheckIn;
-    @SerializedName("propertyType")
-    @Expose
+    @JsonProperty("propertyType")
+    
     public String propertyType;
-    @SerializedName("yatraSmart")
-    @Expose
+    @JsonProperty("yatraSmart")
+    
     public String yatraSmart;
-    @SerializedName("Reviews")
-    @Expose
+    @JsonProperty("Reviews")
+    
     public Object reviews;
-    @SerializedName("Multimedia")
-    @Expose
+    @JsonProperty("Multimedia")
+    
     public Multimedia multimedia;
-    @SerializedName("POI")
-    @Expose
+    @JsonProperty("POI")
+    
     public POI pOI;
-    @SerializedName("Amenities")
-    @Expose
+    @JsonProperty("Amenities")
+    
     public Amenities amenities;
-    @SerializedName("CrossLinks")
-    @Expose
+    @JsonProperty("CrossLinks")
+    
     public List<CrossLink> crossLinks = null;
 
 }

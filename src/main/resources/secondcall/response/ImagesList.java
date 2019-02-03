@@ -1,16 +1,16 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class ImagesList {
 
-    @SerializedName("ThumbnailImageObj")
-    @Expose
+    @JsonProperty("ThumbnailImageObj")
+    
     public ThumbnailImageObj thumbnailImageObj;
-    @SerializedName("LargeImageObj")
-    @Expose
+    @JsonProperty("LargeImageObj")
+    
     public LargeImageObj largeImageObj;
 
 }

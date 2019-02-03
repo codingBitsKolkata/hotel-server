@@ -2,13 +2,13 @@
 package secondcall.response;
 
 import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class RatePlans {
 
-    @SerializedName("RatePlan")
-    @Expose
+    @JsonProperty("RatePlan")
+    
     public List<RatePlan> ratePlan = null;
 
 }

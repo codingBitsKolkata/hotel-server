@@ -1,8 +1,10 @@
+
 package com.hotelserver.model.firstresponse;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -14,22 +16,16 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = false)
 @ToString
 @JsonInclude(Include.NON_NULL)
-
 public class BasicPropertyInfo {
-	@JsonProperty("HotelCode")
-	private String HotelCode;
 
-	@JsonProperty("Address")
-	private Address Address;
+    @SerializedName("CurrencyCode")
+    @Expose
+    public String currencyCode;
+    @SerializedName("HotelCode")
+    @Expose
+    public String hotelCode;
+    @SerializedName("Address")
+    @Expose
+    public Address address;
 
-	@JsonProperty("CurrencyCode")
-	private String CurrencyCode;
-
-	//
-	// @Override
-	// public String toString()
-	// {
-	// return "ClassPojo [HotelCode = "+HotelCode+", Address = "+Address+",
-	// CurrencyCode = "+CurrencyCode+"]";
-	// }
 }

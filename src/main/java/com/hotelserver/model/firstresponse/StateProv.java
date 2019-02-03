@@ -1,24 +1,25 @@
+
 package com.hotelserver.model.firstresponse;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-public class StateProv
-{
-    private String StateCode;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-    public String getStateCode ()
-    {
-        return StateCode;
-    }
+@Getter
+@Setter
+@EqualsAndHashCode(callSuper = false)
+@ToString
+@JsonInclude(Include.NON_NULL)
+public class StateProv {
 
-    public void setStateCode (String StateCode)
-    {
-        this.StateCode = StateCode;
-    }
+    @SerializedName("StateCode")
+    @Expose
+    public Integer stateCode;
 
-    @Override
-    public String toString()
-    {
-        return "ClassPojo [StateCode = "+StateCode+"]";
-    }
 }
-

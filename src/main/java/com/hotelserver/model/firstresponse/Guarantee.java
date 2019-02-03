@@ -1,8 +1,10 @@
+
 package com.hotelserver.model.firstresponse;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -15,12 +17,9 @@ import lombok.ToString;
 @ToString
 @JsonInclude(Include.NON_NULL)
 public class Guarantee {
-	@JsonProperty("GuaranteeType")
-	private String GuaranteeType;
 
-	// @Override
-	// public String toString()
-	// {
-	// return "ClassPojo [GuaranteeType = "+GuaranteeType+"]";
-	// }
+    @SerializedName("GuaranteeType")
+    @Expose
+    public String guaranteeType;
+
 }

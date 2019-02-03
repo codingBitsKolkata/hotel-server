@@ -1,19 +1,19 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Deadline {
 
-    @SerializedName("OffsetDropTime")
-    @Expose
+    @JsonProperty("OffsetDropTime")
+    
     public String offsetDropTime;
-    @SerializedName("OffsetTimeUnit")
-    @Expose
+    @JsonProperty("OffsetTimeUnit")
+    
     public String offsetTimeUnit;
-    @SerializedName("OffsetUnitMultiplier")
-    @Expose
+    @JsonProperty("OffsetUnitMultiplier")
+    
     public String offsetUnitMultiplier;
 
 }

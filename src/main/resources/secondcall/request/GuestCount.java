@@ -1,13 +1,13 @@
 
 package secondcall.request;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class GuestCount {
 
-    @SerializedName("AgeQualifyingCode")
-    @Expose
+    @JsonProperty("AgeQualifyingCode")
+    
     public String ageQualifyingCode;
 
 }

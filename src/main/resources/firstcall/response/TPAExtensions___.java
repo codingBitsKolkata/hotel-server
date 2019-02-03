@@ -1,25 +1,25 @@
 
 package firstcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class TPAExtensions___ {
 
-    @SerializedName("LowestRatePlanId")
-    @Expose
+    @JsonProperty("LowestRatePlanId")
+    
     public String lowestRatePlanId;
-    @SerializedName("PahSCRestriction")
-    @Expose
+    @JsonProperty("PahSCRestriction")
+    
     public String pahSCRestriction;
-    @SerializedName("StopSell")
-    @Expose
+    @JsonProperty("StopSell")
+    
     public String stopSell;
-    @SerializedName("HotelBasicInformation")
-    @Expose
+    @JsonProperty("HotelBasicInformation")
+    
     public HotelBasicInformation hotelBasicInformation;
-    @SerializedName("DeepLinkInformation")
-    @Expose
+    @JsonProperty("DeepLinkInformation")
+    
     public DeepLinkInformation deepLinkInformation;
 
 }

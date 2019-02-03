@@ -1,25 +1,25 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class RoomRate {
 
-    @SerializedName("RoomID")
-    @Expose
+    @JsonProperty("RoomID")
+    
     public String roomID;
-    @SerializedName("RatePlanCode")
-    @Expose
+    @JsonProperty("RatePlanCode")
+    
     public String ratePlanCode;
-    @SerializedName("Rates")
-    @Expose
+    @JsonProperty("Rates")
+    
     public Rates rates;
-    @SerializedName("Total")
-    @Expose
+    @JsonProperty("Total")
+    
     public Total total;
-    @SerializedName("GuestCounts")
-    @Expose
+    @JsonProperty("GuestCounts")
+    
     public GuestCounts guestCounts;
 
 }

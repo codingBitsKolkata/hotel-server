@@ -1,16 +1,16 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class StateProv {
 
-    @SerializedName("StateCode")
-    @Expose
+    @JsonProperty("StateCode")
+    
     public String stateCode;
-    @SerializedName("#text")
-    @Expose
+    @JsonProperty("#text")
+    
     public String text;
 
 }

@@ -1,19 +1,19 @@
 
 package secondcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Multimedia {
 
-    @SerializedName("ImageUrl")
-    @Expose
+    @JsonProperty("ImageUrl")
+    
     public String imageUrl;
-    @SerializedName("ThumbnailUrl")
-    @Expose
+    @JsonProperty("ThumbnailUrl")
+    
     public String thumbnailUrl;
-    @SerializedName("ImageJSON")
-    @Expose
+    @JsonProperty("ImageJSON")
+    
     public ImageJSON imageJSON;
 
 }

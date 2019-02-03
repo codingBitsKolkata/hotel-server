@@ -1,31 +1,31 @@
 
 package firstcall.response;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class RoomType_ {
 
-    @SerializedName("maxAdult")
-    @Expose
+    @JsonProperty("maxAdult")
+    
     public String maxAdult;
-    @SerializedName("maxChild")
-    @Expose
+    @JsonProperty("maxChild")
+    
     public String maxChild;
-    @SerializedName("maxChildAge")
-    @Expose
+    @JsonProperty("maxChildAge")
+    
     public String maxChildAge;
-    @SerializedName("maxGuest")
-    @Expose
+    @JsonProperty("maxGuest")
+    
     public String maxGuest;
-    @SerializedName("minChildAge")
-    @Expose
+    @JsonProperty("minChildAge")
+    
     public String minChildAge;
-    @SerializedName("propertyLevel")
-    @Expose
+    @JsonProperty("propertyLevel")
+    
     public String propertyLevel;
-    @SerializedName("smoking")
-    @Expose
+    @JsonProperty("smoking")
+    
     public String smoking;
 
 }

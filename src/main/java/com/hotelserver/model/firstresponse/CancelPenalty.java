@@ -1,8 +1,10 @@
+
 package com.hotelserver.model.firstresponse;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -14,21 +16,16 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = false)
 @ToString
 @JsonInclude(Include.NON_NULL)
-
 public class CancelPenalty {
-	@JsonProperty("PenaltyDescription")
-	private PenaltyDescription PenaltyDescription;
 
-	@JsonProperty("NonRefundable")
-	private String NonRefundable;
+    @SerializedName("PenaltyDescription")
+    @Expose
+    public PenaltyDescription penaltyDescription;
+    @SerializedName("Deadline")
+    @Expose
+    public String deadline;
+    @SerializedName("NonRefundable")
+    @Expose
+    public Boolean nonRefundable;
 
-	@JsonProperty("Deadline")
-	private String Deadline;
-
-	// @Override
-	// public String toString()
-	// {
-	// return "ClassPojo [PenaltyDescription = "+PenaltyDescription+", NonRefundable
-	// = "+NonRefundable+", Deadline = "+Deadline+"]";
-	// }
 }
