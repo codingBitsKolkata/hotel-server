@@ -36,16 +36,21 @@ public class HotelController extends BaseController {
 	@PostMapping(value = "/fetch-hotels", produces = "application/json")
 	@ApiOperation(value = "Fetch Hotels", response = ResponseModel.class)
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "OK"),
-			@ApiResponse(code = 201, message = "Please Try after Sometime!!!"),
-			@ApiResponse(code = 320, message = "Session expires!!! Please Login to continue..."),
-			@ApiResponse(code = 321, message = "Please give User Token"),
-			@ApiResponse(code = 322, message = "Invalid user Token") })
+			@ApiResponse(code = 201, message = "Please Try after Sometime!!!") })
 	public ResponseEntity<ResponseModel> fetchHotels(@RequestBody FilterCiteriaModel filterCiteriaModel) {
 
 		if (logger.isInfoEnabled()) {
 			logger.info("fetchHotels -- START");
 		}
 
+//		{
+//			  "checkInDate": "2019-03-29",
+//			  "checkOutDate": "2019-03-30",
+//			  "cityName": "Mumbai",
+//			  "countryName": "India",
+//			  "noOfAdult": "2",
+//			  "noOfChild": "1"
+//			}
 		ResponseModel responseModel = new ResponseModel();
 		Util.printLog(filterCiteriaModel, HotelConstant.INCOMING, "Fetch Hotels", request);
 		try {
