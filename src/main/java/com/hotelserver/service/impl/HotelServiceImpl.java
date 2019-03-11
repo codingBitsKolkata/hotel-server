@@ -154,6 +154,7 @@ public class HotelServiceImpl implements HotelService {
 						
 						propertyListViewModel.setStayType("PRIVATE");
 						propertyListViewModel.setIsBookmark(false);
+						propertyListViewModel.setPgCategorySex("BOTH");
 					}
 					
 					propertyListViewModels.add(propertyListViewModel);

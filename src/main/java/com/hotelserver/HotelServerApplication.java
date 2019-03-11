@@ -33,24 +33,6 @@ public class HotelServerApplication extends WebMvcConfigurerAdapter {
 		SpringApplication.run(HotelServerApplication.class, args);
 	}
 	
-//	@Bean
-//	public Jaxb2Marshaller marshaller() {
-//		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-//		// this package must match the package in the <generatePackage> specified in
-//		// pom.xml
-//		marshaller.setContextPath("hello.wsdl");
-//		return marshaller;
-//	}
-//
-//	@Bean
-//	public CountryClient countryClient(Jaxb2Marshaller marshaller) {
-//		CountryClient client = new CountryClient();
-//		client.setDefaultUri("http://localhost:8080/ws");
-//		client.setMarshaller(marshaller);
-//		client.setUnmarshaller(marshaller);
-//		return client;
-//	}
-
 	@Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/test/**").addResourceLocations("/test/").setCachePeriod(0);
