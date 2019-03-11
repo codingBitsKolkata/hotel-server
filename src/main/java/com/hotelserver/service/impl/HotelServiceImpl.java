@@ -2,10 +2,12 @@ package com.hotelserver.service.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -18,12 +20,14 @@ import org.springframework.util.CollectionUtils;
 
 import com.hotelserver.exceptions.FormExceptions;
 import com.hotelserver.helper.SoapCall;
+import com.hotelserver.model.Amenities;
 import com.hotelserver.model.BasicPropertyInfoType;
 import com.hotelserver.model.OTAHotelAvailRS;
 import com.hotelserver.model.RoomStayType;
 import com.hotelserver.model.OTAHotelAvailRS.RoomStays.RoomStay;
 import com.hotelserver.model.RoomTypeType;
 import com.hotelserver.model.SecondCallRequest;
+import com.hotelserver.model.propertylist.AmenitiesModel;
 import com.hotelserver.model.propertylist.FilterCiteriaModel;
 import com.hotelserver.model.propertylist.PropertyListViewModel;
 import com.hotelserver.model.propertylist.SpaceRuleModel;
@@ -66,6 +70,7 @@ public class HotelServiceImpl implements HotelService {
 				roomStays.parallelStream().forEach(roomStay -> {	
 					PropertyListViewModel propertyListViewModel = new PropertyListViewModel();
 					
+					propertyListViewModel.setCorrelationID(otaHotelAvailRS.getCorrelationID());
 					// Basic Info
 					if(Objects.nonNull(roomStay.getBasicPropertyInfo())) {
 						secondCallRequest.setHotelCode(roomStay.getBasicPropertyInfo().getHotelCode());
@@ -85,6 +90,7 @@ public class HotelServiceImpl implements HotelService {
 										propertyListViewModel.setLongitude(basicPropertyInfoType.getPosition().getLongitude()); // Set Longitude
 									}
 									
+									propertyListViewModel.setPropertyId(roomStay.getBasicPropertyInfo().getHotelCode()); // Set Property Id
 									propertyListViewModel.setOraName("ORA"+roomStay.getBasicPropertyInfo().getHotelCode()); // Set OraName
 									if(Objects.nonNull(basicPropertyInfoType.getAddress()) && !CollectionUtils.isEmpty(basicPropertyInfoType.getAddress().getAddressLine())) {
 										propertyListViewModel.setAddress(basicPropertyInfoType.getAddress().getAddressLine().get(0) 
@@ -108,6 +114,22 @@ public class HotelServiceImpl implements HotelService {
 								try {
 									if(Objects.nonNull(roomStay2.getTPAExtensions()) && Objects.nonNull(roomStay2.getTPAExtensions().getHotelBasicInformation()) &&  Objects.nonNull(roomStay2.getTPAExtensions().getHotelBasicInformation().getReviews())) {
 										propertyListViewModel.setReviewCount(String.valueOf(roomStay2.getTPAExtensions().getHotelBasicInformation().getReviews().getReviewCount()));
+									}
+								} catch (Exception e) {
+									propertyListViewModel.setReviewCount("0");
+								}
+								
+								// Ammenities
+								try {
+									if(Objects.nonNull(roomStay2.getTPAExtensions()) && Objects.nonNull(roomStay2.getTPAExtensions().getHotelBasicInformation()) &&  Objects.nonNull(roomStay2.getTPAExtensions().getHotelBasicInformation().getAmenities())) {
+										 List<Amenities.PropertyAmenities> ammenities = roomStay2.getTPAExtensions().getHotelBasicInformation().getAmenities().getPropertyAmenities();
+										 Set<AmenitiesModel> amenitiesModels = new HashSet<>();
+										 ammenities.parallelStream().forEach(a -> {
+											 AmenitiesModel amenitiesModel = new AmenitiesModel();
+											 amenitiesModel.setAminitiesName(a.getDescription());
+											 amenitiesModel.setAminitiesType("BASIC");
+										 });
+										propertyListViewModel.setAmenitiesModels(amenitiesModels);
 									}
 								} catch (Exception e) {
 									propertyListViewModel.setReviewCount("0");
