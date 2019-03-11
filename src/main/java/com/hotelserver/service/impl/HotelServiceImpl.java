@@ -128,6 +128,7 @@ public class HotelServiceImpl implements HotelService {
 											 AmenitiesModel amenitiesModel = new AmenitiesModel();
 											 amenitiesModel.setAminitiesName(a.getDescription());
 											 amenitiesModel.setAminitiesType("BASIC");
+											 amenitiesModels.add(amenitiesModel);
 										 });
 										propertyListViewModel.setAmenitiesModels(amenitiesModels);
 									}
