@@ -27,7 +27,7 @@ import io.swagger.annotations.ApiResponses;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/api")
+//@RequestMapping("/api")
 @Api(value = "Hotel", tags = "Hotel")
 public class HotelController extends BaseController {
 
