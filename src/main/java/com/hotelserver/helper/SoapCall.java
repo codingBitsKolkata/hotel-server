@@ -95,7 +95,7 @@ public class SoapCall extends WebServiceGatewaySupport {
 
 			pagination.setEnabled(false);
 			pagination.setHotelsFrom(1);
-			pagination.setHotelsTo(5);
+			pagination.setHotelsTo(2);
 
 			tpaExtensions.setPagination(pagination);
 
