@@ -89,4 +89,7 @@ public class FilterCiteriaModel {
 
 	@JsonProperty("cityName")
 	private String cityName;
+	
+	@JsonProperty("correlationID")
+	private String correlationID;
 }
