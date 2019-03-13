@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OTA_HotelDescriptiveInfoRS xmlns="http://www.opentravel.org/OTA/2003/05">
+    <HotelDescriptiveContents>
+        <HotelDescriptiveContent HotelCode="00000001" HotelName="Ashok Country Resort">
+            <HotelInfo HotelStatus="4 Star">
+                <Descriptions>
+                    <MultimediaDescriptions>
+                        <MultimediaDescription>
+                            <ImageItems>
+<ImageItem>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/CHAIN.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/HA.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/HO.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/HO_TN.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/2/nxd/maw/wym/dbo/0000000995RD.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/0000000994RD.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/0000001014RD.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/0000001015RD.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/0000000087RD.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/XT1.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/XT2.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/XT3.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/XT4.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/XT5.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/XT6.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/XT7.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/XT8.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/XT9.jpg</URL>
+    </ImageFormat>
+</ImageItem>
+                            </ImageItems>
+                            <CloudinaryImageItems>
+<ImageItem>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1390498186/Domestic Hotels/Hotels_Delhi/Hotel Ashok Country Resort/Exterior~58.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1467127211/Domestic Hotels/Hotels_New Delhi/Ashok Country Resort/Club Single Room/Club_Single_Room_k9Nk71.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1467127203/Domestic Hotels/Hotels_New Delhi/Ashok Country Resort/Deluxe Single Room/Deluxe_Single_Room_4cqsb8.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1467127208/Domestic Hotels/Hotels_New Delhi/Ashok Country Resort/Club Room/Club_Room_R5ida2.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1467127200/Domestic Hotels/Hotels_New Delhi/Ashok Country Resort/Deluxe Double Room/Deluxe_Double_Room_fGdoQJ.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1467127206/Domestic Hotels/Hotels_New Delhi/Ashok Country Resort/Luxury Suite/Luxury_Suite_z7svKQ.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1399619921/Domestic Hotels/Hotels_New Delhi/Ashok Country Resort/Swimming Pool.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1399619988/Domestic Hotels/Hotels_New Delhi/Ashok Country Resort/Twin Bedroom.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1399619944/Domestic Hotels/Hotels_New Delhi/Ashok Country Resort/Reception.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1399620010/Domestic Hotels/Hotels_New Delhi/Ashok Country Resort/Luxury Suite.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1399620018/Domestic Hotels/Hotels_New Delhi/Ashok Country Resort/Super Room.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1399619962/Domestic Hotels/Hotels_New Delhi/Ashok Country Resort/Corridor.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1390498068/Domestic Hotels/Hotels_Delhi/Hotel Ashok Country Resort/Bar~147.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1390498666/Domestic Hotels/Hotels_Delhi/Hotel Ashok Country Resort/WayToRestaurant.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1390498289/Domestic Hotels/Hotels_Delhi/Hotel Ashok Country Resort/KingSizeRoom~0.jpg</URL>
+    </ImageFormat>
+</ImageItem>
+                            </CloudinaryImageItems>
+                        </MultimediaDescription>
+                    </MultimediaDescriptions>
+                    <DescriptiveText>Situated at a proximity of 1 km from Rajokari Xing Bus Stand, Ashok Country Resort houses a business center with internet access. This resort in New Delhi maintains 82 air-conditioned rooms. In room amenities available include television, mini-bar, television, telephone and an attached bathroom. </DescriptiveText>
+                </Descriptions>
+                <Position Latitude="28.526241" Longitude="77.09259"/>
+            </HotelInfo>
+            <FacilityInfo>
+                <GuestRooms>
+                    <GuestRoom MaxAdultOccupancy="3" MaxChildOccupancy="1" MaxOccupancy="3" RoomTypeName="Club Ac Room" URI="http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/RD.jpg" ID="0000000994">
+                        <DescriptiveText>This 185 sq. ft., garden-view room is designed with artistic woodwork. A king-size bed dominates the interiors, which are equipped with a tea-coffee maker, a well-stocked private mini-bar, an A/C, a 21 inch flat screen television, a hairdryer, and 24-hour  room service.</DescriptiveText>
+                    </GuestRoom>
+                </GuestRooms>
+            </FacilityInfo>
+            <Policies>
+                <Policy>
+                    <PolicyInfo CheckInTime="12:00:00" CheckOutTime="12:00:00"/>
+                </Policy>
+            </Policies>
+            <AffiliationInfo>
+                <DistribSystems>
+                    <DistribSystem ChainCode="0002      " ChainName="Sahni Resorts Pvt.Ltd."/>
+                </DistribSystems>
+            </AffiliationInfo>
+            <ContactInfos>
+                <ContactInfo>
+                    <Addresses>
+                        <Address RPH="Mahipalpur" Remark="Mahipalpur">
+                            <AddressLine>Address_1 : 30, Rajokri Road, Kapashera, New Delhi</AddressLine>
+                            <AddressLine>Address_2 : Kapashera</AddressLine>
+                            <AddressLine>Address: 30, Rajokri Road, Kapashera, New Delhi,Kapashera,Mahipalpur,NEW DELHI,DELHI,India,Pin-110037    </AddressLine>
+                            <CityName>NEW DELHI</CityName>
+                            <County>India</County>
+                        </Address>
+                    </Addresses>
+                </ContactInfo>
+            </ContactInfos>
+            <TPA_Extensions>
+                <ReviewRating>3.7  </ReviewRating>
+                <ReviewCount>20   </ReviewCount>
+                <Hotel_Star>4</Hotel_Star>
+                <ImagePath>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/maw/wym/dbo/HO_TN.jpg</ImagePath>
+                <HotelSearchKey>ashok-country-resort-00000001</HotelSearchKey>
+                <AreaSeoId>mahipalpur</AreaSeoId>
+                <SecondaryAreaIds>3219</SecondaryAreaIds>
+                <SecondaryAreaName>Airport Zone</SecondaryAreaName>
+                <HotelState>DELHI</HotelState>
+                <HotelPinCode>110037    </HotelPinCode>
+                <HotelNoOfRooms>80</HotelNoOfRooms>
+                <HotelNoOfFloors>2</HotelNoOfFloors>
+                <CityZone></CityZone>
+                <WeekDayRank>547</WeekDayRank>
+                <WeekEndRank>547</WeekEndRank>
+                <ThemeList>
+                    <Theme>Romantic Hotels,Luxury Hotels,Business Hotels</Theme>
+                </ThemeList>
+                <CategoryList>
+                    <Category>Resort,4 Star Hotels,Best Hotels</Category>
+                </CategoryList>
+                <HotelReviews>
+                    <HotelReview>
+                        <AvgGuestRating>Excellent</AvgGuestRating>
+                        <OverallRating>4</OverallRating>
+                        <Comments>It is close to the international airport which is a plus point. I enjoyed the lovely butter nans with reshmi kebabs.</Comments>
+                        <RoomQuality>5</RoomQuality>
+                        <ServiceQuality>5</ServiceQuality>
+                        <DiningQuality>5</DiningQuality>
+                        <Cleanliness>2</Cleanliness>
+                        <PostDate>2006-07-27 00:00:00.0</PostDate>
+                        <ConsumerCity>Gurgaon</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Excellent</AvgGuestRating>
+                        <OverallRating>4</OverallRating>
+                        <Comments>The hotel is located in an isolated place in the countryside but not far from the airport. It is quiet and peaceful. A good place for one night transit. </Comments>
+                        <RoomQuality>4</RoomQuality>
+                        <ServiceQuality>3</ServiceQuality>
+                        <DiningQuality>3</DiningQuality>
+                        <Cleanliness>4</Cleanliness>
+                        <PostDate>2007-10-16 00:00:00.0</PostDate>
+                        <ConsumerCity>Mumbai</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Shashank Anikhindi</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Excellent</AvgGuestRating>
+                        <OverallRating>4</OverallRating>
+                        <Comments>I think this is a rather comfortable, clean and safe place keeping in mind that one stays near to the airport, more often for a early morning flight and the like.  Would recommend this property as a option to have.</Comments>
+                        <RoomQuality>4</RoomQuality>
+                        <ServiceQuality>4</ServiceQuality>
+                        <DiningQuality>4</DiningQuality>
+                        <Cleanliness>4</Cleanliness>
+                        <PostDate>2007-10-30 00:00:00.0</PostDate>
+                        <ConsumerCity>Bangalore </ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Mr Balamurali Duraiswamy</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Good</AvgGuestRating>
+                        <OverallRating>3</OverallRating>
+                        <Comments></Comments>
+                        <RoomQuality>2</RoomQuality>
+                        <ServiceQuality>3</ServiceQuality>
+                        <DiningQuality>2</DiningQuality>
+                        <Cleanliness>3</Cleanliness>
+                        <PostDate>2007-12-08 00:00:00.0</PostDate>
+                        <ConsumerCity>DELHI</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>TARUN CHUTANI</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Superb</AvgGuestRating>
+                        <OverallRating>5</OverallRating>
+                        <Comments>It was a fantastic stay in this hotel. Rooms were well furnished with beautiful interiors. Staffs were very prompt and quick in their work. I had my food in the restaurant it was lovely in taste. I would definitely stay in this hotel again.</Comments>
+                        <RoomQuality>4</RoomQuality>
+                        <ServiceQuality>5</ServiceQuality>
+                        <DiningQuality>5</DiningQuality>
+                        <Cleanliness>5</Cleanliness>
+                        <PostDate>2008-01-14 00:00:00.0</PostDate>
+                        <ConsumerCity>Madurai</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>MADHAVAN THIRUMALAIAPPAN</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Excellent</AvgGuestRating>
+                        <OverallRating>4</OverallRating>
+                        <Comments>The staffs were very kind and polite in their work. Rooms were decently maintained with all the facilities. The food was good of the restaurant. I would definitely recommend this hotel to my friends.
+</Comments>
+                        <RoomQuality>4</RoomQuality>
+                        <ServiceQuality>4</ServiceQuality>
+                        <DiningQuality>4</DiningQuality>
+                        <Cleanliness>4</Cleanliness>
+                        <PostDate>2008-01-15 00:00:00.0</PostDate>
+                        <ConsumerCity>Mumbai</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Merc  doorduin</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Below Average</AvgGuestRating>
+                        <OverallRating>1</OverallRating>
+                        <Comments>Its a worst property. They are running illegal bar and charging very high. Service was pathetic. Food was pathetic. Room was below average. I will never recommend any one in future. 
+</Comments>
+                        <RoomQuality>1</RoomQuality>
+                        <ServiceQuality>1</ServiceQuality>
+                        <DiningQuality>1</DiningQuality>
+                        <Cleanliness>1</Cleanliness>
+                        <PostDate>2008-02-07 00:00:00.0</PostDate>
+                        <ConsumerCity>Mumbai</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>sunil  Newatia</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Excellent</AvgGuestRating>
+                        <OverallRating>4</OverallRating>
+                        <Comments>Great property, everything was perfect. No complaints and suggestion. Would highly recommend this hotel.</Comments>
+                        <RoomQuality>4</RoomQuality>
+                        <ServiceQuality>4</ServiceQuality>
+                        <DiningQuality>4</DiningQuality>
+                        <Cleanliness>4</Cleanliness>
+                        <PostDate>2008-01-17 00:00:00.0</PostDate>
+                        <ConsumerCity>Mumbai</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Mr.Agnelo Rajesh Athaide</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Good</AvgGuestRating>
+                        <OverallRating>3</OverallRating>
+                        <Comments>Our stay was average considering the price i have paid. Club Room was average with basic facilities and the interior of the hotel was old, when asked the staff members say they have no time for renovation as it will be always occupied by guests. Food was below average as you dont get much options to choose and also not tasty, we ordered paneer masala they gave us 4 days old paneer, no much choices in Indian food as they well be having more foreign guests. Overall it was just average stay. Not recommendable for price conscious travelers.  </Comments>
+                        <RoomQuality>3</RoomQuality>
+                        <ServiceQuality>3</ServiceQuality>
+                        <DiningQuality>2</DiningQuality>
+                        <Cleanliness>4</Cleanliness>
+                        <PostDate>2008-01-16 00:00:00.0</PostDate>
+                        <ConsumerCity>Mumbai</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Mr Jatin  Brahmecha</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Excellent</AvgGuestRating>
+                        <OverallRating>4</OverallRating>
+                        <Comments>For the money we paid it was not upto our expectation. No gym. Food was ok in taste. Room was spacious and clean. Overall the stay was just average.</Comments>
+                        <RoomQuality>5</RoomQuality>
+                        <ServiceQuality>3</ServiceQuality>
+                        <DiningQuality>3</DiningQuality>
+                        <Cleanliness>5</Cleanliness>
+                        <PostDate>2008-02-05 00:00:00.0</PostDate>
+                        <ConsumerCity>Punjab</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Mr.swarndeep singh</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Excellent</AvgGuestRating>
+                        <OverallRating>4</OverallRating>
+                        <Comments>The hotel was definately better than most hotels in India.  It was clean, staff was very courteous and helpful.  Transport to and from the airport was included, which was much appreciated, especially since I did not want to use a taxi after having heard all horrible stories.  The room was clean, but missed a few things like alarm clock, the remote for the wall mounted plasma tv (it was nice) didn't work most of the time.  The dinning options weren't that good and the pool was closed when I was there.</Comments>
+                        <RoomQuality>4</RoomQuality>
+                        <ServiceQuality>5</ServiceQuality>
+                        <DiningQuality>3</DiningQuality>
+                        <Cleanliness>4</Cleanliness>
+                        <PostDate>2007-12-30 00:00:00.0</PostDate>
+                        <ConsumerCity>Chikago</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Suhel  Daud</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Excellent</AvgGuestRating>
+                        <OverallRating>4</OverallRating>
+                        <Comments>Friendly staff makes our stay enjoyable. According to our experience we didn't find any problem in hotel. Complimentary breakfast and airport transfer was nice.</Comments>
+                        <RoomQuality>4</RoomQuality>
+                        <ServiceQuality>4</ServiceQuality>
+                        <DiningQuality>4</DiningQuality>
+                        <Cleanliness>4</Cleanliness>
+                        <PostDate>2008-02-21 00:00:00.0</PostDate>
+                        <ConsumerCity>Jaipur</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Jagmohan Khandelwal</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Excellent</AvgGuestRating>
+                        <OverallRating>4</OverallRating>
+                        <Comments>The Club Room was comfortable as well as neat and clean. Staff was prompt and quick in their service. Hotel has restaurant which serves great food.</Comments>
+                        <RoomQuality>4</RoomQuality>
+                        <ServiceQuality>4</ServiceQuality>
+                        <DiningQuality>4</DiningQuality>
+                        <Cleanliness>4</Cleanliness>
+                        <PostDate>2008-03-06 00:00:00.0</PostDate>
+                        <ConsumerCity>Bangalore</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Harmit  kalra </CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Good</AvgGuestRating>
+                        <OverallRating>3</OverallRating>
+                        <Comments>Room was small but comfortable. The staff was courteous, its definatly a value for money.</Comments>
+                        <RoomQuality>3</RoomQuality>
+                        <ServiceQuality>3</ServiceQuality>
+                        <DiningQuality>3</DiningQuality>
+                        <Cleanliness>3</Cleanliness>
+                        <PostDate>2008-02-25 00:00:00.0</PostDate>
+                        <ConsumerCity>Kochin</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>A M  Sadhiq</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Excellent</AvgGuestRating>
+                        <OverallRating>4</OverallRating>
+                        <Comments>It was my business trip and i have stayed here for 2 nights. Only problem i had was the Wi-Fi cut off which was not working property. Otherwise it was an excellent stay. Food was good in the restaurant.</Comments>
+                        <RoomQuality>5</RoomQuality>
+                        <ServiceQuality>3</ServiceQuality>
+                        <DiningQuality>4</DiningQuality>
+                        <Cleanliness>5</Cleanliness>
+                        <PostDate>2008-01-21 00:00:00.0</PostDate>
+                        <ConsumerCity>chennai</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Krishna Mahesh</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Good</AvgGuestRating>
+                        <OverallRating>3</OverallRating>
+                        <Comments>Overall cleanliness was good with all modern facilities. Location was great in the city. Would like stay on my next visit also recommend for others.</Comments>
+                        <RoomQuality>3</RoomQuality>
+                        <ServiceQuality>3</ServiceQuality>
+                        <DiningQuality>3</DiningQuality>
+                        <Cleanliness>3</Cleanliness>
+                        <PostDate>2008-03-31 01:17:02.857</PostDate>
+                        <ConsumerCity>Ahmedabad</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Mr. Ken Mceven</CustomerName>
+                    </HotelReview>
+                    <HotelReview>
+                        <AvgGuestRating>Excellent</AvgGuestRating>
+                        <OverallRating>4</OverallRating>
+                        <Comments>Club Room was very comfortable. All services and the amenities were very decent. The celanliness was good and the food was delicious but expensive. Overall slightly above average stay.</Comments>
+                        <RoomQuality>4</RoomQuality>
+                        <ServiceQuality>3</ServiceQuality>
+                        <DiningQuality>3</DiningQuality>
+                        <Cleanliness>4</Cleanliness>
+                        <PostDate>2008-07-06 05:24:25.473</PostDate>
+                        <ConsumerCity>Hyderabad</ConsumerCity>
+                        <ConsumerCountry>India</ConsumerCountry>
+                        <CustomerName>Subhas Naik</CustomerName>
+                    </HotelReview>
+                </HotelReviews>
+                <PopularityIndexes>
+                    <PopularityIndex>
+                        <Index>0.0</Index>
+                        <CityName>FARIDABAD</CityName>
+                    </PopularityIndex>
+                    <PopularityIndex>
+                        <Index>0.0</Index>
+                        <CityName>GHAZIABAD</CityName>
+                    </PopularityIndex>
+                    <PopularityIndex>
+                        <Index>0.0</Index>
+                        <CityName>GREATER NOIDA</CityName>
+                    </PopularityIndex>
+                    <PopularityIndex>
+                        <Index>0.0</Index>
+                        <CityName>GURGAON</CityName>
+                    </PopularityIndex>
+                    <PopularityIndex>
+                        <Index>0.0</Index>
+                        <CityName>MANESAR</CityName>
+                    </PopularityIndex>
+                    <PopularityIndex>
+                        <Index>0.01826483942568302</Index>
+                        <CityName>NEW DELHI</CityName>
+                    </PopularityIndex>
+                    <PopularityIndex>
+                        <Index>0.0</Index>
+                        <CityName>NOIDA</CityName>
+                    </PopularityIndex>
+                </PopularityIndexes>
+                <Facilities>
+                    <Amenity>
+                        <AmenityId>345       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Swimming pool</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>52        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Health club</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>59        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Laundry facilities</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>22        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Babysitting or child care</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>24        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Business center</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>344       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Travel counter</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>71        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Parking</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>785       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Outdoor Pool (all year)</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>336       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Full Services Health Spa</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>415       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Conference Room</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>745       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Telephone</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>1018      </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Kids Pool</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>47        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Front desk</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>54        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Internet Access</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>715       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>24-Hour Front Desk</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>734       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Wake up service/Alarm clock</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>83        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Restaurant</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>84        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Room service</Description>
+                    </Amenity>
+                </Facilities>
+                <RoomLevelAmenities/>
+                <InAndArounds>
+                    <InAndAround>
+                        <NameOfAttraction>Connaught Place</NameOfAttraction>
+                        <DistanceInKm>16        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Crafts Museum</NameOfAttraction>
+                        <DistanceInKm>14        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Delhi Zoo(Purana Qila)</NameOfAttraction>
+                        <DistanceInKm>13        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Gurgaon</NameOfAttraction>
+                        <DistanceInKm>5         </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Humayun's Tomb</NameOfAttraction>
+                        <DistanceInKm>12        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>India Gate</NameOfAttraction>
+                        <DistanceInKm>15        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>International Airport</NameOfAttraction>
+                        <DistanceInKm>4         </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Jama Masjid</NameOfAttraction>
+                        <DistanceInKm>15        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Jantar Mantar</NameOfAttraction>
+                        <DistanceInKm>12        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Lotus Temple</NameOfAttraction>
+                        <DistanceInKm>20        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Mahatma Gandhi's Memorial (Raj Ghat)</NameOfAttraction>
+                        <DistanceInKm>15        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>National Museum</NameOfAttraction>
+                        <DistanceInKm>15        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Nehru Memorial Museum &amp; Planatorium</NameOfAttraction>
+                        <DistanceInKm>10        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>New Delhi Railway Station</NameOfAttraction>
+                        <DistanceInKm>14        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Nizammudin Railway Station</NameOfAttraction>
+                        <DistanceInKm>14        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Qutab Minar</NameOfAttraction>
+                        <DistanceInKm>8         </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Red Fort</NameOfAttraction>
+                        <DistanceInKm>16        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Trade Fair Grounds (Pragati Maidan)</NameOfAttraction>
+                        <DistanceInKm>25        </DistanceInKm>
+                    </InAndAround>
+                    <InAndAround>
+                        <NameOfAttraction>Travel Guru Office </NameOfAttraction>
+                        <DistanceInKm>12        </DistanceInKm>
+                    </InAndAround>
+                </InAndArounds>
+            </TPA_Extensions>
+        </HotelDescriptiveContent>
+    </HotelDescriptiveContents>
+</OTA_HotelDescriptiveInfoRS>
+
