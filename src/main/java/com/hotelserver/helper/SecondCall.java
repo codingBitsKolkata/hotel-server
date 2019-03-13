@@ -11,19 +11,19 @@ import org.springframework.stereotype.Component;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 
 import com.hotelserver.config.SearchClient;
-import com.hotelserver.model.AvailRequestSegmentsType;
-import com.hotelserver.model.CountryNameType;
-import com.hotelserver.model.DateTimeSpanType;
-import com.hotelserver.model.GuestCountType;
-import com.hotelserver.model.HotelSearchCriteriaType;
-import com.hotelserver.model.HotelSearchCriterionType;
-import com.hotelserver.model.ItemSearchCriterionType;
-import com.hotelserver.model.OTAHotelAvailRQ;
-import com.hotelserver.model.OTAHotelAvailRS;
-import com.hotelserver.model.Pagination;
-import com.hotelserver.model.RoomStayCandidateType;
-import com.hotelserver.model.TPAExtensionsType;
 import com.hotelserver.model.propertylist.FilterCiteriaModel;
+import com.hotelserver.model.search.AvailRequestSegmentsType;
+import com.hotelserver.model.search.CountryNameType;
+import com.hotelserver.model.search.DateTimeSpanType;
+import com.hotelserver.model.search.GuestCountType;
+import com.hotelserver.model.search.HotelSearchCriteriaType;
+import com.hotelserver.model.search.HotelSearchCriterionType;
+import com.hotelserver.model.search.ItemSearchCriterionType;
+import com.hotelserver.model.search.OTAHotelAvailRQ;
+import com.hotelserver.model.search.OTAHotelAvailRS;
+import com.hotelserver.model.search.Pagination;
+import com.hotelserver.model.search.RoomStayCandidateType;
+import com.hotelserver.model.search.TPAExtensionsType;
 
 @Component
 public class SecondCall extends WebServiceGatewaySupport {

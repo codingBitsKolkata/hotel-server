@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 import org.springframework.ws.soap.client.core.SoapActionCallback;
 
-import com.hotelserver.model.OTAHotelAvailRQ;
-import com.hotelserver.model.OTAHotelAvailRS;
+import com.hotelserver.model.search.OTAHotelAvailRQ;
+import com.hotelserver.model.search.OTAHotelAvailRS;
 
 public class SearchClient extends WebServiceGatewaySupport {
 	

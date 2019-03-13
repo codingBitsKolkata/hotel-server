@@ -20,16 +20,6 @@ import org.springframework.util.CollectionUtils;
 
 import com.hotelserver.exceptions.FormExceptions;
 import com.hotelserver.helper.SoapCall;
-import com.hotelserver.model.Amenities;
-import com.hotelserver.model.BasicPropertyInfoType;
-import com.hotelserver.model.HotelPOI;
-import com.hotelserver.model.HotelPriceModel;
-import com.hotelserver.model.ImageJSON;
-import com.hotelserver.model.OTAHotelAvailRS;
-import com.hotelserver.model.OTAHotelAvailRS.RoomStays.RoomStay;
-import com.hotelserver.model.RoomStayType;
-import com.hotelserver.model.RoomTypeType;
-import com.hotelserver.model.SecondCallRequest;
 import com.hotelserver.model.propertylist.AmenitiesModel;
 import com.hotelserver.model.propertylist.FilterCiteriaModel;
 import com.hotelserver.model.propertylist.PropertyListViewModel;
@@ -46,6 +36,16 @@ import com.hotelserver.model.propertylist.RoomVsAmenitiesModel;
 import com.hotelserver.model.propertylist.SpaceRuleModel;
 import com.hotelserver.model.propertylist.SpecialExperienceModel;
 import com.hotelserver.model.propertylist.StayTypeModel;
+import com.hotelserver.model.search.Amenities;
+import com.hotelserver.model.search.BasicPropertyInfoType;
+import com.hotelserver.model.search.HotelPOI;
+import com.hotelserver.model.search.HotelPriceModel;
+import com.hotelserver.model.search.ImageJSON;
+import com.hotelserver.model.search.OTAHotelAvailRS;
+import com.hotelserver.model.search.RoomStayType;
+import com.hotelserver.model.search.RoomTypeType;
+import com.hotelserver.model.search.SecondCallRequest;
+import com.hotelserver.model.search.OTAHotelAvailRS.RoomStays.RoomStay;
 import com.hotelserver.service.HotelService;
 
 @Service
