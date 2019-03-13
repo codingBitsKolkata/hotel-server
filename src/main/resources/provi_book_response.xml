@@ -1,0 +1,17 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <OTA_HotelResRS xmlns="http://www.opentravel.org/OTA/2003/05" CorrelationID="136dff34-909d-459e-8b58-deda5941c4ba" TransactionIdentifier="254565">
+            <Success />
+            <HotelReservations>
+                <HotelReservation>
+                    <UniqueID Type="23" ID="2104748316" />
+                    <RoomStays>
+                        <RoomStay>
+                            <TPA_Extensions />
+                        </RoomStay>
+                    </RoomStays>
+                </HotelReservation>
+            </HotelReservations>
+        </OTA_HotelResRS>
+    </soap:Body>
+</soap:Envelope>

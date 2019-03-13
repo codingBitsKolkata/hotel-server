@@ -1,0 +1,57 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <OTA_HotelResRS xmlns="http://www.opentravel.org/OTA/2003/05" CorrelationID="8af1bc72-168e-492e-bdb9-c2a087577ed3" TransactionIdentifier="254565">
+            <Success />
+            <HotelReservations>
+                <HotelReservation>
+                    <UniqueID Type="14" ID="DSE0005339135" />
+                    <RoomStays>
+                        <RoomStay>
+                            <RoomTypes>
+                                <RoomType NumberOfUnits="2" InvBlockCode="Hotels" RoomTypeCode="0000037611">
+                                    <AdditionalDetails>
+                                        <AdditionalDetail Code="YatraGurantee" />
+                                    </AdditionalDetails>
+                                </RoomType>
+                            </RoomTypes>
+                            <RatePlans>
+                                <RatePlan>
+                                    <CancelPenalties>
+                                        <CancelPenalty>
+                                            <PenaltyDescription>
+                                                <Text>Full refund if you cancel this booking by 26-Mar-19 12:00 PM IST.First night cost (including taxes &amp; service charge) will be charged if you cancel this booking later than 26-Mar-19 12:00 PM IST.You might be charged upto the full cost of stay (including taxes &amp;amp; service charge) if you do not check-in to the hotel.</Text>
+                                            </PenaltyDescription>
+                                        </CancelPenalty>
+                                    </CancelPenalties>
+                                </RatePlan>
+                            </RatePlans>
+                            <RoomRates>
+                                <RoomRate RatePlanCode="0001184329" />
+                            </RoomRates>
+                            <Total AmountAfterTax="14398.00" CurrencyCode="INR" />
+                            <BasicPropertyInfo HotelCode="00009838" HotelName="Goldfinch Hotel" AreaID="Andheri East">
+                                <Address>
+                                    <AddressLine>Plot no. 34/21, Central Rd,MIDC, Krantiveer Lakhuji Salve Marg, Mulgaon, Andheri (E)</AddressLine>
+                                    <CityName>MUMBAI</CityName>
+                                    <StateProv>MAHARASHTRA</StateProv>
+                                    <CountryName>India</CountryName>
+                                </Address>
+                                <ContactNumbers>
+                                    <ContactNumber AreaCityCode="22" CountryAccessCode="91" PhoneNumber="66880909" PhoneTechType="1" />
+                                    <ContactNumber AreaCityCode="22" CountryAccessCode="91" PhoneNumber="" PhoneTechType="3" />
+                                </ContactNumbers>
+                                <Award Rating="4" />
+                            </BasicPropertyInfo>
+                            <TPA_Extensions>
+                                <HotelBasicInformation>
+                                    <GSTDetails address="Plot no. 34/21, Central Rd,MIDC, Krantiveer Lakhuji Salve Marg, Mulgaon, Andheri (E)" name="Goldfinch Hotel" number="27AAECA3879L1Z6" pincode="0" state="MAHARASHTRA" stateCode="27" />
+                                </HotelBasicInformation>
+                                <AffiliateCommission Amount="2735.62" HotelTaxIncluded="false" Percent="19.0" />
+                            </TPA_Extensions>
+                        </RoomStay>
+                    </RoomStays>
+                </HotelReservation>
+            </HotelReservations>
+        </OTA_HotelResRS>
+    </soap:Body>
+</soap:Envelope>

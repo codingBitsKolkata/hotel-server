@@ -1,0 +1,81 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Body>
+<OTA_HotelResRQ xmlns="http://www.opentravel.org/OTA/2003/05" CorrelationID="2345" TransactionIdentifier="254565" Version="1.003">
+	<POS>
+		<Source ISOCurrency="INR">
+			<RequestorID MessagePassword="test@123" ID="1000000002">
+				<CompanyName Code="testsell"></CompanyName>
+			</RequestorID>
+		</Source>
+	</POS>
+<UniqueID Type="0" ID="" />
+<HotelReservations>
+<HotelReservation>
+<RoomStays>
+	<RoomStay>
+		<RoomTypes>
+			<RoomType NumberOfUnits="2" RoomTypeCode="0000037611"/>
+		</RoomTypes>
+		<RatePlans>
+			<RatePlan RatePlanCode="0000144761" />
+		</RatePlans>
+		<GuestCounts IsPerRoom="false">
+			<GuestCount ResGuestRPH="0" AgeQualifyingCode="10" Count="1" />
+			<!--
+			<GuestCount ResGuestRPH="0" AgeQualifyingCode="8" Age="9" Count="1" />
+			<GuestCount ResGuestRPH="0" AgeQualifyingCode="8" Age="10" Count="1" />
+			-->
+			<GuestCount ResGuestRPH="1" AgeQualifyingCode="10" Count="1" />
+			<GuestCount ResGuestRPH="1" AgeQualifyingCode="8" Age="7" Count="1" />
+			<!--
+			<GuestCount ResGuestRPH="1" AgeQualifyingCode="8" Age="10" Count="1" />
+			-->
+		</GuestCounts>
+		<TimeSpan End="2019-03-28" Start="2019-03-27" />
+		<Total AmountBeforeTax="14398.0" CurrencyCode="INR">
+			<Taxes Amount="0" />
+		</Total>
+		<BasicPropertyInfo HotelCode="00009838" />
+		<Comments>
+			<Comment>
+				<Text>non-smoking room requested;king bed</Text>
+			</Comment>
+		</Comments>
+	</RoomStay>
+</RoomStays>
+	<ResGuests>
+		<ResGuest>
+			<Profiles>
+				<ProfileInfo>
+					<Profile ProfileType="1">
+						<Customer>
+							<PersonName>
+								<NamePrefix>Mr.</NamePrefix>
+								<GivenName>Rakesh</GivenName>
+								<MiddleName></MiddleName>
+								<Surname>Kumar</Surname>
+							</PersonName>
+							<Telephone AreaCityCode="80" CountryAccessCode="91" Extension="0" PhoneNumber="8040301003" PhoneTechType="1"/>
+							<Email>abc@gmail.com</Email>
+							<Address>
+								<AddressLine>No.13</AddressLine>
+								<AddressLine>Grape Garden</AddressLine>
+								<CityName>Bangalore</CityName>
+								<PostalCode>560095</PostalCode>
+								<StateProv>KA</StateProv>
+								<CountryName>India</CountryName>
+							</Address>
+						</Customer>
+					</Profile>
+				</ProfileInfo>
+			</Profiles>
+		</ResGuest>
+	</ResGuests>
+	<ResGlobalInfo>
+		<Guarantee GuaranteeType="PrePay" />
+	</ResGlobalInfo>
+</HotelReservation>
+</HotelReservations>
+</OTA_HotelResRQ>
+</soap:Body>
+</soap:Envelope>
