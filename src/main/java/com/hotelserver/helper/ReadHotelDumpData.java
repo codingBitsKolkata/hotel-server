@@ -38,16 +38,16 @@ public class ReadHotelDumpData {
 				HotelDetails hotelDetails = new HotelDetails();
 				NodeList node = (NodeList) hotelDescriptiveContentNodeList;
 				Element element = (Element) node.item(i);
-				hotelDetails.setHotelName(element.getAttribute("HotelDetailsName"));
+				hotelDetails.setHotelName(element.getAttribute("HotelName"));
 
-				NodeList hotelDetailsInfoNode = element.getElementsByTagName("HotelDetailsInfo");
-				Element hotelDetailsInfoElement = (Element) hotelDetailsInfoNode.item(0);
-				NodeList descriptionsNode = hotelDetailsInfoElement.getElementsByTagName("Descriptions");
+				NodeList hotelInfoNode = element.getElementsByTagName("HotelInfo");
+				Element hotelInfoElement = (Element) hotelInfoNode.item(0);
+				NodeList descriptionsNode = hotelInfoElement.getElementsByTagName("Descriptions");
 				Element descriptionsElement = (Element) descriptionsNode.item(0);
 				hotelDetails.setDescriptiveText(
 						descriptionsElement.getElementsByTagName("DescriptiveText").item(0).getTextContent());
 
-				NodeList positionNode = hotelDetailsInfoElement.getElementsByTagName("Position");
+				NodeList positionNode = hotelInfoElement.getElementsByTagName("Position");
 				Element positionElement = (Element) positionNode.item(0);
 				hotelDetails.setLatitude(positionElement.getAttribute("Latitude"));
 				hotelDetails.setLongitude(positionElement.getAttribute("Longitude"));
@@ -67,14 +67,15 @@ public class ReadHotelDumpData {
 				hotelDetails.setReviewCount(tPA_ExtensionsElement.getElementsByTagName("ReviewCount").item(0).getTextContent());
 				hotelDetails.setReviewRating(tPA_ExtensionsElement.getElementsByTagName("ReviewRating").item(0).getTextContent());
 
-				NodeList hotelDetailsReviewsNode = tPA_ExtensionsElement.getElementsByTagName("HotelDetailsReviews");
-				Element hotelDetailsReviewsElement = (Element) hotelDetailsReviewsNode.item(0);
-				NodeList hotelDetailsReviewNode = hotelDetailsReviewsElement.getElementsByTagName("HotelDetailsReview");
+				NodeList hotelReviewsNode = tPA_ExtensionsElement.getElementsByTagName("HotelReviews");
+				Element hotelReviewsElement = (Element) hotelReviewsNode.item(0);
+				NodeList hotelReviewNode = hotelReviewsElement.getElementsByTagName("HotelReview");
+
 
 				List<Reviews> hotelReviews = new CopyOnWriteArrayList<>();
-				for (int j = 0; j < hotelDetailsReviewNode.getLength(); j++) {
+				for (int j = 0; j < hotelReviewNode.getLength(); j++) {
 					
-					Node node2 = hotelDetailsReviewNode.item(j);
+					Node node2 = hotelReviewNode.item(j);
 					if (node2.getNodeType() == Node.ELEMENT_NODE) {
 						Element reviewsElement = (Element) node2;
 
@@ -102,7 +103,7 @@ public class ReadHotelDumpData {
 				}
 
 				hotelDetails.setReviews(hotelReviews);
-				hotelData.put(element.getAttribute("HotelDetailsCode"), hotelDetails);
+				hotelData.put(element.getAttribute("HotelCode"), hotelDetails);
 
 			}
 		} catch (Exception e) {
