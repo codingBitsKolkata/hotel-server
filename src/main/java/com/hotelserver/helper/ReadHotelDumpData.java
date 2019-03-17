@@ -3,12 +3,15 @@ package com.hotelserver.helper;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.WeakHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Component;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -21,6 +24,8 @@ import com.hotelserver.model.dumpdata.Reviews;
 @Component
 public class ReadHotelDumpData {
 
+	private static final Logger logger = LogManager.getLogger(ReadHotelDumpData.class);
+	
 	public Map<String, HotelDetails> readMasterData(File file) {
 
 		Map<String, HotelDetails> hotelData = new WeakHashMap<>();
@@ -35,78 +40,90 @@ public class ReadHotelDumpData {
 
 			for (int i = 0; i < hotelDescriptiveContentNodeList.getLength(); i++) {
 				
-				HotelDetails hotelDetails = new HotelDetails();
-				NodeList node = (NodeList) hotelDescriptiveContentNodeList;
-				Element element = (Element) node.item(i);
-				hotelDetails.setHotelName(element.getAttribute("HotelName"));
+				String hotelCode = "";
+				try {
+					HotelDetails hotelDetails = new HotelDetails();
+					NodeList node = (NodeList) hotelDescriptiveContentNodeList;
+					Element element = (Element) node.item(i);
+					hotelCode = element.getAttribute("HotelCode");
+					hotelDetails.setHotelName(element.getAttribute("HotelName"));
 
-				NodeList hotelInfoNode = element.getElementsByTagName("HotelInfo");
-				Element hotelInfoElement = (Element) hotelInfoNode.item(0);
-				NodeList descriptionsNode = hotelInfoElement.getElementsByTagName("Descriptions");
-				Element descriptionsElement = (Element) descriptionsNode.item(0);
-				hotelDetails.setDescriptiveText(
-						descriptionsElement.getElementsByTagName("DescriptiveText").item(0).getTextContent());
-
-				NodeList positionNode = hotelInfoElement.getElementsByTagName("Position");
-				Element positionElement = (Element) positionNode.item(0);
-				hotelDetails.setLatitude(positionElement.getAttribute("Latitude"));
-				hotelDetails.setLongitude(positionElement.getAttribute("Longitude"));
-
-				NodeList policiesNode = element.getElementsByTagName("Policies");
-				Element policiesElement = (Element) policiesNode.item(0);
-				NodeList policyNode = policiesElement.getElementsByTagName("Policy");
-
-				Element policyElement = (Element) policyNode.item(0);
-				NodeList policyInfoNode = policyElement.getElementsByTagName("PolicyInfo");
-				Element policyInfoElement = (Element) policyInfoNode.item(0);
-				hotelDetails.setCheckInTime(policyInfoElement.getAttribute("CheckInTime"));
-				hotelDetails.setCheckOutTime(policyInfoElement.getAttribute("CheckOutTime"));
-
-				NodeList tPA_ExtensionsNode = element.getElementsByTagName("TPA_Extensions");
-				Element tPA_ExtensionsElement = (Element) tPA_ExtensionsNode.item(0);
-				hotelDetails.setReviewCount(tPA_ExtensionsElement.getElementsByTagName("ReviewCount").item(0).getTextContent());
-				hotelDetails.setReviewRating(tPA_ExtensionsElement.getElementsByTagName("ReviewRating").item(0).getTextContent());
-
-				NodeList hotelReviewsNode = tPA_ExtensionsElement.getElementsByTagName("HotelReviews");
-				Element hotelReviewsElement = (Element) hotelReviewsNode.item(0);
-				NodeList hotelReviewNode = hotelReviewsElement.getElementsByTagName("HotelReview");
-
-
-				List<Reviews> hotelReviews = new CopyOnWriteArrayList<>();
-				for (int j = 0; j < hotelReviewNode.getLength(); j++) {
-					
-					Node node2 = hotelReviewNode.item(j);
-					if (node2.getNodeType() == Node.ELEMENT_NODE) {
-						Element reviewsElement = (Element) node2;
-
-						Reviews reviews = new Reviews();
-						reviews.setAvgGuestRating(
-								reviewsElement.getElementsByTagName("AvgGuestRating").item(0).getTextContent());
-						reviews
-								.setComments(reviewsElement.getElementsByTagName("Comments").item(0).getTextContent());
-						reviews
-								.setPostDate(reviewsElement.getElementsByTagName("PostDate").item(0).getTextContent());
-						reviews.setCleanliness(
-								reviewsElement.getElementsByTagName("Cleanliness").item(0).getTextContent());
-						reviews.setDiningQuality(
-								reviewsElement.getElementsByTagName("DiningQuality").item(0).getTextContent());
-						reviews.setOverallRating(
-								reviewsElement.getElementsByTagName("OverallRating").item(0).getTextContent());
-						reviews.setRoomQuality(
-								reviewsElement.getElementsByTagName("RoomQuality").item(0).getTextContent());
-						reviews.setServiceQuality(
-								reviewsElement.getElementsByTagName("ServiceQuality").item(0).getTextContent());
-
-						hotelReviews.add(reviews);
-
+					NodeList hotelInfoNode = element.getElementsByTagName("HotelInfo");
+					Element hotelInfoElement = (Element) hotelInfoNode.item(0);
+					NodeList descriptionsNode = hotelInfoElement.getElementsByTagName("Descriptions");
+					Element descriptionsElement = (Element) descriptionsNode.item(0);
+					if(Objects.nonNull(descriptionsElement) && Objects.nonNull(descriptionsElement.getElementsByTagName("DescriptiveText")) 
+							&& Objects.nonNull(descriptionsElement.getElementsByTagName("DescriptiveText").item(0))) {
+						hotelDetails.setDescriptiveText(
+								descriptionsElement.getElementsByTagName("DescriptiveText").item(0).getTextContent());
 					}
-				}
 
-				hotelDetails.setReviews(hotelReviews);
-				hotelData.put(element.getAttribute("HotelCode"), hotelDetails);
+					NodeList positionNode = hotelInfoElement.getElementsByTagName("Position");
+					Element positionElement = (Element) positionNode.item(0);
+					hotelDetails.setLatitude(positionElement.getAttribute("Latitude"));
+					hotelDetails.setLongitude(positionElement.getAttribute("Longitude"));
+
+					NodeList policiesNode = element.getElementsByTagName("Policies");
+					Element policiesElement = (Element) policiesNode.item(0);
+					NodeList policyNode = policiesElement.getElementsByTagName("Policy");
+
+					Element policyElement = (Element) policyNode.item(0);
+					NodeList policyInfoNode = policyElement.getElementsByTagName("PolicyInfo");
+					Element policyInfoElement = (Element) policyInfoNode.item(0);
+					hotelDetails.setCheckInTime(policyInfoElement.getAttribute("CheckInTime"));
+					hotelDetails.setCheckOutTime(policyInfoElement.getAttribute("CheckOutTime"));
+
+					NodeList tPA_ExtensionsNode = element.getElementsByTagName("TPA_Extensions");
+					Element tPA_ExtensionsElement = (Element) tPA_ExtensionsNode.item(0);
+					hotelDetails.setReviewCount(tPA_ExtensionsElement.getElementsByTagName("ReviewCount").item(0).getTextContent());
+					hotelDetails.setReviewRating(tPA_ExtensionsElement.getElementsByTagName("ReviewRating").item(0).getTextContent());
+
+					NodeList hotelReviewsNode = tPA_ExtensionsElement.getElementsByTagName("HotelReviews");
+					Element hotelReviewsElement = (Element) hotelReviewsNode.item(0);
+					NodeList hotelReviewNode = hotelReviewsElement.getElementsByTagName("HotelReview");
+
+
+					List<Reviews> hotelReviews = new CopyOnWriteArrayList<>();
+					for (int j = 0; j < hotelReviewNode.getLength(); j++) {
+						
+						Node node2 = hotelReviewNode.item(j);
+						if (node2.getNodeType() == Node.ELEMENT_NODE) {
+							Element reviewsElement = (Element) node2;
+
+							Reviews reviews = new Reviews();
+							reviews.setAvgGuestRating(
+									reviewsElement.getElementsByTagName("AvgGuestRating").item(0).getTextContent());
+							reviews
+									.setComments(reviewsElement.getElementsByTagName("Comments").item(0).getTextContent());
+							reviews
+									.setPostDate(reviewsElement.getElementsByTagName("PostDate").item(0).getTextContent());
+							reviews.setCleanliness(
+									reviewsElement.getElementsByTagName("Cleanliness").item(0).getTextContent());
+							reviews.setDiningQuality(
+									reviewsElement.getElementsByTagName("DiningQuality").item(0).getTextContent());
+							reviews.setOverallRating(
+									reviewsElement.getElementsByTagName("OverallRating").item(0).getTextContent());
+							reviews.setRoomQuality(
+									reviewsElement.getElementsByTagName("RoomQuality").item(0).getTextContent());
+							reviews.setServiceQuality(
+									reviewsElement.getElementsByTagName("ServiceQuality").item(0).getTextContent());
+
+							hotelReviews.add(reviews);
+
+						}
+					}
+
+					hotelDetails.setReviews(hotelReviews);
+					hotelData.put(hotelCode, hotelDetails);
+				} catch (Exception e) {
+					System.err.println("Exception for hotelCode ==>> "+hotelCode);
+					e.printStackTrace();
+					logger.info("hotelCode ==>> "+hotelCode+" Exception in autoFileUpload -- "+Util.errorToString(e));
+				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+			logger.info("Exception in autoFileUpload -- "+Util.errorToString(e));
 		}
 		
 		return hotelData;
