@@ -50,6 +50,9 @@ public class HibernateConfiguration {
         hibernateProperties.put("hibernate.dialect", hibernateDialect);
         hibernateProperties.put("hibernate.show_sql", hibernateShowSql);
         hibernateProperties.put("hibernate.hbm2ddl.auto", hibernateHbm2ddlAuto);
+        hibernateProperties.put("hibernate.connection.CharSet", "utf8mb4");
+        hibernateProperties.put("hibernate.connection.characterEncoding", "utf8");
+        hibernateProperties.put("hibernate.connection.useUnicode", true);
         sessionFactory.setHibernateProperties(hibernateProperties);
         
         return sessionFactory;
