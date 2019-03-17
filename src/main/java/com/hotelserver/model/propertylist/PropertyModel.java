@@ -102,40 +102,40 @@ public class PropertyModel extends CommonModel {
 	@JsonProperty("userTypeId")
 	private String userTypeId;
 
-	@JsonProperty("propertyType")
+	@JsonProperty("propertyTypeModel")
 	private PropertyTypeModel propertyTypeModel;
 
-	@JsonProperty("stayType")
+	@JsonProperty("stayTypeModel")
 	private StayTypeModel stayTypeModel;
 
-	@JsonProperty("hostVsAccount")
+	@JsonProperty("hostVsAccountModel")
 	private HostVsAccountModel hostVsAccountModel;
 
-	@JsonProperty("propertyVsDocuments")
+	@JsonProperty("propertyVsDocumentModels")
 	private List<PropertyVsDocumentModel> propertyVsDocumentModels;
 
-	@JsonProperty("propertyVsDescriptions")
+	@JsonProperty("propertyVsDescriptionModels")
 	private List<PropertyVsDescriptionModel> propertyVsDescriptionModels;
 
-	@JsonProperty("propertyVsGuestAccess")
+	@JsonProperty("propertyVsGuestAccessModels")
 	private List<PropertyVsGuestAccessModel> propertyVsGuestAccessModels;
 
-	@JsonProperty("propertyVsImages")
+	@JsonProperty("propertyVsImageModels")
 	private List<PropertyVsImageModel> propertyVsImageModels;
 
-	@JsonProperty("propertyVsNearbys")
+	@JsonProperty("propertyVsNearbyModels")
 	private List<PropertyVsNearbyModel> propertyVsNearbyModels;
 
-	@JsonProperty("propertyVsPriceDrops")
+	@JsonProperty("propertyVsPriceDropModels")
 	private List<PropertyVsPriceDropModel> propertyVsPriceDropModels;
 
-	@JsonProperty("propertyVsSpaceRules")
+	@JsonProperty("propertyVsSpaceRuleModels")
 	private List<PropertyVsSpaceRuleModel> propertyVsSpaceRuleModels;
 
-	@JsonProperty("propertyVsSpecialExperiences")
+	@JsonProperty("propertyVsSpecialExperienceModels")
 	private List<PropertyVsSpecialExperienceModel> propertyVsSpecialExperienceModels;
 
-	@JsonProperty("rooms")
+	@JsonProperty("roomModels")
 	private List<RoomModel> roomModels;
 
 	@JsonProperty("propertyOffer")
@@ -177,7 +177,7 @@ public class PropertyModel extends CommonModel {
 	@JsonProperty("isBookmark")
 	private Boolean isBookmark;
 	
-	@JsonProperty("reviews")
+	@JsonProperty("userReviewModels")
 	private List<UserReviewModel> userReviewModels;
 	
 	@JsonProperty("hostDetails")
