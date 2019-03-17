@@ -42,10 +42,10 @@ import com.hotelserver.model.search.HotelPOI;
 import com.hotelserver.model.search.HotelPriceModel;
 import com.hotelserver.model.search.ImageJSON;
 import com.hotelserver.model.search.OTAHotelAvailRS;
+import com.hotelserver.model.search.OTAHotelAvailRS.RoomStays.RoomStay;
 import com.hotelserver.model.search.RoomStayType;
 import com.hotelserver.model.search.RoomTypeType;
 import com.hotelserver.model.search.SecondCallRequest;
-import com.hotelserver.model.search.OTAHotelAvailRS.RoomStays.RoomStay;
 import com.hotelserver.service.HotelService;
 
 @Service

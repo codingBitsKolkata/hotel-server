@@ -12,5 +12,5 @@ public interface HotelService {
 	List<PropertyListViewModel> fetchHotels(FilterCiteriaModel filterCiteriaModel) throws FormExceptions;
 
 	PropertyModel fetchHotelDetails(FilterCiteriaModel filterCiteriaModel) throws FormExceptions;
-
+	
 }

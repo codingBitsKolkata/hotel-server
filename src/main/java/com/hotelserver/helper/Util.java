@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
@@ -37,6 +38,7 @@ import java.util.regex.Pattern;
 import javax.crypto.Cipher;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
+import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -1253,6 +1255,15 @@ public class Util {
 		Matcher m = p.matcher(value);
 		return m.find();
 	}
+	
+	public static String convertXmlGregorianToString(XMLGregorianCalendar xc) {
+		
+        DateFormat df = new SimpleDateFormat("hh:mm a z");
+        GregorianCalendar gCalendar = xc.toGregorianCalendar();
+        Date date = gCalendar.getTime();
+        String dateString = df.format(date);
+        return dateString;
+    }
 
 	public static void main(String[] args) {
 

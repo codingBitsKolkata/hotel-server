@@ -30,7 +30,7 @@ public class SoapClientInterceptor implements ClientInterceptor {
 		try {
 			soapMessage.writeTo(out);
 			requestPayload = new String(out.toByteArray());
-			System.err.println("requestPayload ==>> "+requestPayload);
+			System.out.println("requestPayload ==>> "+requestPayload);
 		} catch (SOAPException | IOException e) {
 			LOGGER.error("Error occurred while handling SOAP request. Error: " + e.getMessage(), e);
 		}

@@ -598,6 +598,490 @@
                 </InAndArounds>
             </TPA_Extensions>
         </HotelDescriptiveContent>
+		        
+        <HotelDescriptiveContent HotelCode="00136816" HotelName="Gulshah Motel">
+            <HotelInfo HotelStatus="2 Star">
+                <Descriptions>
+                    <MultimediaDescriptions>
+                        <MultimediaDescription>
+                            <ImageItems>
+<ImageItem>
+    <ImageFormat>
+        <URL>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/lat/qye/ebt/HO.jpg</URL>
+    </ImageFormat>
+</ImageItem>
+                            </ImageItems>
+                            <CloudinaryImageItems>
+<ImageItem>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1536858558/Hotel/00136816/Pic_3_fSjmuG.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1536858716/Hotel/00136816/Pic_6_kTZm0I.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1536858785/Hotel/00136816/Pic_2_zO3Lwi.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1536858932/Hotel/00136816/Pic_10_NlWA1r.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1536859043/Hotel/00136816/Pic_8_n8AbM4.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1536859104/Hotel/00136816/Pic_26_axlUuo.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1536859159/Hotel/00136816/Pic_25_CpKq0K.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1536859786/Hotel/00136816/Pic_11_mYruG7.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1536859955/Hotel/00136816/IMG_4373_1a6zMW.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1537030265/Hotel/00136816/IMG_4408_0Vyz4p.jpg</URL>
+    </ImageFormat>
+    <ImageFormat>
+        <URL>https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_city_desktop/v1537030654/Hotel/00136816/IMG_4388_-_Copy_MP2e6o.jpg</URL>
+    </ImageFormat>
+</ImageItem>
+                            </CloudinaryImageItems>
+                        </MultimediaDescription>
+                    </MultimediaDescriptions>
+                    <DescriptiveText>&lt;b&gt;Offering quality and value, Gulshah Motel hotel is an ideal option for travelers. &lt;/b&gt;&lt;br&gt;&lt;br&gt;
+
+Situated at a close proximity from Ashutosh Shiv Mandir, Gulshah Motel is a budget accommodation in Jalandhar offering free breakfast and internet access to its guests.
+
+A total of 17 well-kept and spacious rooms are available for accommodation. Some of the in-room amenities offered are television, wakeup-calls, minibar, telephone, desk, air-conditioner, room heater, wardrobe and bathroom with hot/cold running water.
+
+24-hour front desk, business center, luggage storage, elevator, banquet facilities, parking, security guard and backup generator are a few of the facilities available at Gulshah Motel. This hotel in Jalandhar offers room service, express check-in/check-out, currency exchange, medical assistance, laundry and concierge for the convenience of the guests.
+
+The property is accessible via travel hubs such as Jalandhar City Railway Station (5 km) and Sri Guru Ram Dass Jee International Airport (90 km). Places worth a visit include Mandir Shri Siddh Baba Sodal (4 km) and Devi Talab Temple (6 km).
+
+The property also has a restaurant and bar.
+
+&lt;B&gt; What people love the most about this property is its great location and classy ambience.
+Book now and enjoy world class services at Gulshah Motel. &lt;/B&gt;</DescriptiveText>
+                </Descriptions>
+                <Position Latitude="31.364723" Longitude="75.5961"/>
+            </HotelInfo>
+            <FacilityInfo>
+                <GuestRooms/>
+            </FacilityInfo>
+            <Policies>
+                <Policy>
+                    <PolicyInfo CheckInTime="10:00:00" CheckOutTime="11:00:00"/>
+                </Policy>
+            </Policies>
+            <AffiliationInfo>
+                <DistribSystems>
+                    <DistribSystem ChainCode="001       " ChainName="--None--"/>
+                </DistribSystems>
+            </AffiliationInfo>
+            <ContactInfos>
+                <ContactInfo>
+                    <Addresses>
+                        <Address RPH="--None--" Remark="--None--">
+                            <AddressLine>Address_1 : Sarabha Nagar, Near Jalandhar Pathankot Bye Pass</AddressLine>
+                            <AddressLine>Address_2 : </AddressLine>
+                            <AddressLine>Address: Sarabha Nagar, Near Jalandhar Pathankot Bye Pass,,--None--,JALANDHAR,PUNJAB,India,Pin-144004    </AddressLine>
+                            <CityName>JALANDHAR</CityName>
+                            <County>India</County>
+                        </Address>
+                    </Addresses>
+                </ContactInfo>
+            </ContactInfos>
+            <TPA_Extensions>
+                <ReviewRating></ReviewRating>
+                <ReviewCount></ReviewCount>
+                <Hotel_Star>2</Hotel_Star>
+                <ImagePath>http://cdn.travelpartnerweb.com/DesiyaImages/Image/1/nxd/lat/qye/ebt/HO_TN.jpg</ImagePath>
+                <HotelSearchKey>gulshah-motel-00136816</HotelSearchKey>
+                <AreaSeoId></AreaSeoId>
+                <SecondaryAreaIds></SecondaryAreaIds>
+                <SecondaryAreaName></SecondaryAreaName>
+                <HotelState>PUNJAB</HotelState>
+                <HotelPinCode>144004    </HotelPinCode>
+                <HotelNoOfRooms>17</HotelNoOfRooms>
+                <HotelNoOfFloors>2</HotelNoOfFloors>
+                <CityZone></CityZone>
+                <WeekDayRank>188</WeekDayRank>
+                <WeekEndRank>188</WeekEndRank>
+                <ThemeList>
+                    <Theme>Best value</Theme>
+                </ThemeList>
+                <CategoryList>
+                    <Category>Hotels</Category>
+                </CategoryList>
+                <HotelReviews/>
+                <PopularityIndexes/>
+                <Facilities>
+                    <Amenity>
+                        <AmenityId>2036      </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Parking</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>34        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Concierge</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>353       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Luggage storage</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>54        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Internet Access</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>715       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>24-Hour Front Desk</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>83        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Restaurant</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>08        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Banquet facilities</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>2060      </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Room Service</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>1023      </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Porter</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>2056      </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Security Guard</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>2065      </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>24x7 power back up</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>24        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Business center</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>63        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Medical services</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>683       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Elevator</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>718       </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Express Check-in/Check-out</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>09        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Bar</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>2072      </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Ironing Service</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>32        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Breakfast Services</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>37        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Currency exchange</Description>
+                    </Amenity>
+                    <Amenity>
+                        <AmenityId>59        </AmenityId>
+                        <AmenityType>property</AmenityType>
+                        <Description>Laundry facilities</Description>
+                    </Amenity>
+                </Facilities>
+                <RoomLevelAmenities>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429765</RLRoomTypeID>
+                        <RLRoomType>Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>1060</RLAmenityID>
+                        <RLDescription>Hot/cold Water</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429766</RLRoomTypeID>
+                        <RLRoomType>Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>1060</RLAmenityID>
+                        <RLDescription>Hot/cold Water</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429767</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>1060</RLAmenityID>
+                        <RLDescription>Hot/cold Water</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429769</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>1060</RLAmenityID>
+                        <RLDescription>Hot/cold Water</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429765</RLRoomTypeID>
+                        <RLRoomType>Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>568</RLAmenityID>
+                        <RLDescription>Free toiletries</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429766</RLRoomTypeID>
+                        <RLRoomType>Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>568</RLAmenityID>
+                        <RLDescription>Free toiletries</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429767</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>568</RLAmenityID>
+                        <RLDescription>Free toiletries</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429769</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>568</RLAmenityID>
+                        <RLDescription>Free toiletries</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429765</RLRoomTypeID>
+                        <RLRoomType>Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>570</RLAmenityID>
+                        <RLDescription>Bathroom</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429766</RLRoomTypeID>
+                        <RLRoomType>Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>570</RLAmenityID>
+                        <RLDescription>Bathroom</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429767</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>570</RLAmenityID>
+                        <RLDescription>Bathroom</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429769</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>570</RLAmenityID>
+                        <RLDescription>Bathroom</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429765</RLRoomTypeID>
+                        <RLRoomType>Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>582</RLAmenityID>
+                        <RLDescription>Wardrobe/Closet</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429766</RLRoomTypeID>
+                        <RLRoomType>Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>582</RLAmenityID>
+                        <RLDescription>Wardrobe/Closet</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429767</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>582</RLAmenityID>
+                        <RLDescription>Wardrobe/Closet</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429769</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>582</RLAmenityID>
+                        <RLDescription>Wardrobe/Closet</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429765</RLRoomTypeID>
+                        <RLRoomType>Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>585</RLAmenityID>
+                        <RLDescription>Minibar</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429766</RLRoomTypeID>
+                        <RLRoomType>Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>585</RLAmenityID>
+                        <RLDescription>Minibar</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429767</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>585</RLAmenityID>
+                        <RLDescription>Minibar</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429769</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>585</RLAmenityID>
+                        <RLDescription>Minibar</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429765</RLRoomTypeID>
+                        <RLRoomType>Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>588</RLAmenityID>
+                        <RLDescription>Air conditioning</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429766</RLRoomTypeID>
+                        <RLRoomType>Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>588</RLAmenityID>
+                        <RLDescription>Air conditioning</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429767</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>588</RLAmenityID>
+                        <RLDescription>Air conditioning</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429769</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>588</RLAmenityID>
+                        <RLDescription>Air conditioning</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429765</RLRoomTypeID>
+                        <RLRoomType>Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>620</RLAmenityID>
+                        <RLDescription>Desk</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429766</RLRoomTypeID>
+                        <RLRoomType>Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>620</RLAmenityID>
+                        <RLDescription>Desk</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429767</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>620</RLAmenityID>
+                        <RLDescription>Desk</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429769</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>620</RLAmenityID>
+                        <RLDescription>Desk</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429765</RLRoomTypeID>
+                        <RLRoomType>Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>638</RLAmenityID>
+                        <RLDescription>TV</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429766</RLRoomTypeID>
+                        <RLRoomType>Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>638</RLAmenityID>
+                        <RLDescription>TV</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429767</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>638</RLAmenityID>
+                        <RLDescription>TV</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429769</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>638</RLAmenityID>
+                        <RLDescription>TV</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429765</RLRoomTypeID>
+                        <RLRoomType>Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>639</RLAmenityID>
+                        <RLDescription>Telephone</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429766</RLRoomTypeID>
+                        <RLRoomType>Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>639</RLAmenityID>
+                        <RLDescription>Telephone</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429767</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>639</RLAmenityID>
+                        <RLDescription>Telephone</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429769</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>639</RLAmenityID>
+                        <RLDescription>Telephone</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429766</RLRoomTypeID>
+                        <RLRoomType>Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>668</RLAmenityID>
+                        <RLDescription>Wake up service/Alarm clock</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429767</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>668</RLAmenityID>
+                        <RLDescription>Wake up service/Alarm clock</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429769</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>668</RLAmenityID>
+                        <RLDescription>Wake up service/Alarm clock</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429765</RLRoomTypeID>
+                        <RLRoomType>Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>801</RLAmenityID>
+                        <RLDescription>Internet Access</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429766</RLRoomTypeID>
+                        <RLRoomType>Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>801</RLAmenityID>
+                        <RLDescription>Internet Access</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429767</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Single Room</RLRoomType>
+                        <RLAmenityID>801</RLAmenityID>
+                        <RLDescription>Internet Access</RLDescription>
+                    </RoomLevelAmenity>
+                    <RoomLevelAmenity>
+                        <RLRoomTypeID>0000429769</RLRoomTypeID>
+                        <RLRoomType>Super Deluxe Double Room</RLRoomType>
+                        <RLAmenityID>801</RLAmenityID>
+                        <RLDescription>Internet Access</RLDescription>
+                    </RoomLevelAmenity>
+                </RoomLevelAmenities>
+                <InAndArounds/>
+            </TPA_Extensions>
+        </HotelDescriptiveContent>
     </HotelDescriptiveContents>
 </OTA_HotelDescriptiveInfoRS>
 
