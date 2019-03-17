@@ -1,4 +1,4 @@
-package com.hotelserver.service.impl;
+/*package com.hotelserver.service.impl;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -20,7 +20,6 @@ import org.springframework.util.CollectionUtils;
 
 import com.hotelserver.exceptions.FormExceptions;
 import com.hotelserver.helper.SoapCall;
-import com.hotelserver.model.dumpdata.HotelDetails;
 import com.hotelserver.model.propertylist.AmenitiesModel;
 import com.hotelserver.model.propertylist.FilterCiteriaModel;
 import com.hotelserver.model.propertylist.PropertyListViewModel;
@@ -47,14 +46,13 @@ import com.hotelserver.model.search.OTAHotelAvailRS.RoomStays.RoomStay;
 import com.hotelserver.model.search.RoomStayType;
 import com.hotelserver.model.search.RoomTypeType;
 import com.hotelserver.model.search.SecondCallRequest;
-import com.hotelserver.service.HotelDataService;
 import com.hotelserver.service.HotelService;
 
 @Service
 @Transactional(readOnly = true)
-public class HotelServiceImpl implements HotelService {
+public class HotelServiceImplOld implements HotelService {
 
-	private static final Logger logger = LogManager.getLogger(HotelServiceImpl.class);
+	private static final Logger logger = LogManager.getLogger(HotelServiceImplOld.class);
 	
 	@Autowired
 	private SoapCall soapCall;
@@ -74,6 +72,12 @@ public class HotelServiceImpl implements HotelService {
 		if(Objects.nonNull(otaHotelAvailRS) && Objects.nonNull(otaHotelAvailRS.getErrors()) && !CollectionUtils.isEmpty(otaHotelAvailRS.getErrors().getError())) {
 			exceptions.put(otaHotelAvailRS.getErrors().getError().get(0).getCode(), new Exception(otaHotelAvailRS.getErrors().getError().get(0).getShortText()));
 		} else {
+//			SecondCallRequest secondCallRequest = new SecondCallRequest(); 
+//			secondCallRequest.setCorrelationID(otaHotelAvailRS.getCorrelationID());
+//			secondCallRequest.setCheckInDate(filterCiteriaModel.getCheckInDate());
+//			secondCallRequest.setCheckOutDate(filterCiteriaModel.getCheckOutDate());
+//			secondCallRequest.setNoOfAdult(filterCiteriaModel.getNoOfAdult());
+//			secondCallRequest.setNoOfChild(filterCiteriaModel.getNoOfChild());
 			
 			if(Objects.nonNull(otaHotelAvailRS.getRoomStays()) && !CollectionUtils.isEmpty(otaHotelAvailRS.getRoomStays().getRoomStay())) {
 				List<RoomStay> roomStays = otaHotelAvailRS.getRoomStays().getRoomStay();
@@ -82,97 +86,136 @@ public class HotelServiceImpl implements HotelService {
 					PropertyListViewModel propertyListViewModel = new PropertyListViewModel();
 					
 					propertyListViewModel.setCorrelationID(otaHotelAvailRS.getCorrelationID());
-					propertyListViewModel.setPropertyId(roomStay.getBasicPropertyInfo().getHotelCode()); // Set Property Id
-					propertyListViewModel.setOraName("ORA"+roomStay.getBasicPropertyInfo().getHotelCode()); // Set OraName
-					
-					if(HotelDataService.HOTELDATA.containsKey(roomStay.getBasicPropertyInfo().getHotelCode())) {
-						HotelDetails hotelDetails = HotelDataService.HOTELDATA.get(roomStay.getBasicPropertyInfo().getHotelCode());
-						propertyListViewModel.setAddress(hotelDetails.getAddress());
-						propertyListViewModel.setCoverImageURL(hotelDetails.getHotelImage());
-						propertyListViewModel.setLatitude(hotelDetails.getLatitude());
-						propertyListViewModel.setLongitude(hotelDetails.getLongitude());
-						propertyListViewModel.setRating(hotelDetails.getReviewRating());
-						propertyListViewModel.setReviewCount(hotelDetails.getReviewCount());
-					}
-					
-					// Ammenities
-					try {
-						if(Objects.nonNull(roomStay.getTPAExtensions()) && Objects.nonNull(roomStay.getTPAExtensions().getHotelBasicInformation()) &&  Objects.nonNull(roomStay.getTPAExtensions().getHotelBasicInformation().getAmenities())) {
-							 List<Amenities.PropertyAmenities> ammenities = roomStay.getTPAExtensions().getHotelBasicInformation().getAmenities().getPropertyAmenities();
-							 Set<AmenitiesModel> amenitiesModels = new HashSet<>();
-							 ammenities.parallelStream().forEach(a -> {
-								 AmenitiesModel amenitiesModel = new AmenitiesModel();
-								 amenitiesModel.setAminitiesName(a.getDescription());
-								 amenitiesModel.setAminitiesType("BASIC");
-								 amenitiesModels.add(amenitiesModel);
-							 });
-							propertyListViewModel.setAmenitiesModels(amenitiesModels);
-						}
-					} catch (Exception e) {
-					}
-					
-					// Room
-					if(!CollectionUtils.isEmpty(roomStay.getRoomTypes().getRoomType())) {
-						List<RoomTypeType> roomTypes = roomStay.getRoomTypes().getRoomType();
-						Map<String, HotelPriceModel> roomPrices = new ConcurrentHashMap<>();
-						for(RoomTypeType roomType : roomTypes) {
-							if(roomPrices.isEmpty()) {
-								propertyListViewModel.setRoomStandard(roomType.getRoomType()); // Set Room Standard
-								if(!roomType.isNonSmoking()) {
-									List<SpaceRuleModel> spaceRuleModels = new ArrayList<>();
-									SpaceRuleModel spaceRuleModel = new SpaceRuleModel();
-									spaceRuleModel.setRuleName("Smoking");
-									spaceRuleModel.setImgUrl("https://s-ec.bstatic.com/images/hotel/max1024x768/141/141830278.jpg");
-									spaceRuleModel.setSmImgUrl("https://s-ec.bstatic.com/images/hotel/max1024x768/141/141830278.jpg");
-									spaceRuleModels.add(spaceRuleModel);
-									propertyListViewModel.setSpaceRuleModels(spaceRuleModels); // Set Smoking
-								}
-							}
-							
-							HotelPriceModel hotelPriceModel = new HotelPriceModel();
-							hotelPriceModel.setCommission(0.0D);
-							hotelPriceModel.setPrice(0.0D);
-							roomPrices.put(roomType.getRoomTypeCode(), hotelPriceModel);
-						}
+					// Basic Info
+					if(Objects.nonNull(roomStay.getBasicPropertyInfo())) {
+						//secondCallRequest.setHotelCode(roomStay.getBasicPropertyInfo().getHotelCode());
 						
-						List<RoomStayType.RoomRates.RoomRate> roomRates = roomStay.getRoomRates().getRoomRate();
-						for(RoomStayType.RoomRates.RoomRate roomRate : roomRates) {
-							if(Objects.nonNull(roomPrices.get(roomRate.getRoomID()))) {
-								try {
-									HotelPriceModel hotelPriceModel = new HotelPriceModel();
-									hotelPriceModel.setCommission(roomRate.getRates().getRate().get(0).getTPAExtensions().getAffiliateCommission().getAmount());
-									hotelPriceModel.setPrice(roomRate.getRates().getRate().get(0).getBase().getAmountBeforeTax().doubleValue());
-									roomPrices.put(roomRate.getRoomID(), hotelPriceModel);
-								} catch (Exception e) {
+						// Getting Hotel Details By second Call
+//						OTAHotelAvailRS otaHotelAvailRS = soapCall.secondCall(secondCallRequest);
+//						if(Objects.nonNull(otaHotelAvailRS) && Objects.nonNull(otaHotelAvailRS.getErrors()) && !CollectionUtils.isEmpty(otaHotelAvailRS.getErrors().getError())) {
+//							exceptions.put(otaHotelAvailRS.getErrors().getError().get(0).getCode(), new Exception(otaHotelAvailRS.getErrors().getError().get(0).getShortText()));
+//						} else {
+							if(Objects.nonNull(otaHotelAvailRS.getRoomStays()) && !CollectionUtils.isEmpty(otaHotelAvailRS.getRoomStays().getRoomStay())) {
+								//RoomStay roomStay = otaHotelAvailRS.getRoomStays().getRoomStay().get(0);
+								// Basic Info
+								if(Objects.nonNull(roomStay.getBasicPropertyInfo())) {
+									BasicPropertyInfoType basicPropertyInfoType = roomStay.getBasicPropertyInfo();
+									if(Objects.nonNull(basicPropertyInfoType.getPosition())) {
+										propertyListViewModel.setLatitude(basicPropertyInfoType.getPosition().getLatitude()); // Set Latitude
+										propertyListViewModel.setLongitude(basicPropertyInfoType.getPosition().getLongitude()); // Set Longitude
+									}
 									
+									propertyListViewModel.setPropertyId(roomStay.getBasicPropertyInfo().getHotelCode()); // Set Property Id
+									propertyListViewModel.setOraName("ORA"+roomStay.getBasicPropertyInfo().getHotelCode()); // Set OraName
+									if(Objects.nonNull(basicPropertyInfoType.getAddress()) && !CollectionUtils.isEmpty(basicPropertyInfoType.getAddress().getAddressLine())) {
+										propertyListViewModel.setAddress(basicPropertyInfoType.getAddress().getAddressLine().get(0) 
+												+ "." +basicPropertyInfoType.getAddress().getCityName() 
+												+ "." +basicPropertyInfoType.getAddress().getPostalCode()); // Set Address
+									}
+									
+									try {
+										propertyListViewModel.setRating(basicPropertyInfoType.getAward().get(0).getRating()); // Set Rating
+									} catch (Exception e) {
+										propertyListViewModel.setRating("0");
+									}
 								}
+								
+								// Image
+								if(Objects.nonNull(roomStay.getTPAExtensions()) && Objects.nonNull(roomStay.getTPAExtensions().getHotelBasicInformation()) &&  Objects.nonNull(roomStay.getTPAExtensions().getHotelBasicInformation().getMultimedia())) {
+									propertyListViewModel.setCoverImageURL(roomStay.getTPAExtensions().getHotelBasicInformation().getMultimedia().getImageUrl());
+								}
+								
+								// Review
+								try {
+									if(Objects.nonNull(roomStay.getTPAExtensions()) && Objects.nonNull(roomStay.getTPAExtensions().getHotelBasicInformation()) &&  Objects.nonNull(roomStay.getTPAExtensions().getHotelBasicInformation().getReviews())) {
+										propertyListViewModel.setReviewCount(String.valueOf(roomStay.getTPAExtensions().getHotelBasicInformation().getReviews().getReviewCount()));
+									}
+								} catch (Exception e) {
+									propertyListViewModel.setReviewCount("0");
+								}
+								
+								// Ammenities
+								try {
+									if(Objects.nonNull(roomStay.getTPAExtensions()) && Objects.nonNull(roomStay.getTPAExtensions().getHotelBasicInformation()) &&  Objects.nonNull(roomStay.getTPAExtensions().getHotelBasicInformation().getAmenities())) {
+										 List<Amenities.PropertyAmenities> ammenities = roomStay.getTPAExtensions().getHotelBasicInformation().getAmenities().getPropertyAmenities();
+										 Set<AmenitiesModel> amenitiesModels = new HashSet<>();
+										 ammenities.parallelStream().forEach(a -> {
+											 AmenitiesModel amenitiesModel = new AmenitiesModel();
+											 amenitiesModel.setAminitiesName(a.getDescription());
+											 amenitiesModel.setAminitiesType("BASIC");
+											 amenitiesModels.add(amenitiesModel);
+										 });
+										propertyListViewModel.setAmenitiesModels(amenitiesModels);
+									}
+								} catch (Exception e) {
+								}
+								
+								// Room
+								if(!CollectionUtils.isEmpty(roomStay.getRoomTypes().getRoomType())) {
+									List<RoomTypeType> roomTypes = roomStay.getRoomTypes().getRoomType();
+									Map<String, HotelPriceModel> roomPrices = new ConcurrentHashMap<>();
+									for(RoomTypeType roomType : roomTypes) {
+										if(roomPrices.isEmpty()) {
+											propertyListViewModel.setRoomStandard(roomType.getRoomType()); // Set Room Standard
+											if(!roomType.isNonSmoking()) {
+												List<SpaceRuleModel> spaceRuleModels = new ArrayList<>();
+												SpaceRuleModel spaceRuleModel = new SpaceRuleModel();
+												spaceRuleModel.setRuleName("Smoking");
+												spaceRuleModel.setImgUrl("https://s-ec.bstatic.com/images/hotel/max1024x768/141/141830278.jpg");
+												spaceRuleModel.setSmImgUrl("https://s-ec.bstatic.com/images/hotel/max1024x768/141/141830278.jpg");
+												spaceRuleModels.add(spaceRuleModel);
+												propertyListViewModel.setSpaceRuleModels(spaceRuleModels); // Set Smoking
+											}
+										}
+										
+										HotelPriceModel hotelPriceModel = new HotelPriceModel();
+										hotelPriceModel.setCommission(0.0D);
+										hotelPriceModel.setPrice(0.0D);
+										roomPrices.put(roomType.getRoomTypeCode(), hotelPriceModel);
+									}
+									
+									List<RoomStayType.RoomRates.RoomRate> roomRates = roomStay.getRoomRates().getRoomRate();
+									for(RoomStayType.RoomRates.RoomRate roomRate : roomRates) {
+										if(Objects.nonNull(roomPrices.get(roomRate.getRoomID()))) {
+											try {
+												HotelPriceModel hotelPriceModel = new HotelPriceModel();
+												hotelPriceModel.setCommission(roomRate.getRates().getRate().get(0).getTPAExtensions().getAffiliateCommission().getAmount());
+												hotelPriceModel.setPrice(roomRate.getRates().getRate().get(0).getBase().getAmountBeforeTax().doubleValue());
+												roomPrices.put(roomRate.getRoomID(), hotelPriceModel);
+											} catch (Exception e) {
+												
+											}
+										}
+									}
+									
+									Double min = Double.MAX_VALUE;
+									List<String> minKeys = new ArrayList<> ();
+									for(Map.Entry<String, HotelPriceModel> entry: roomPrices.entrySet()) {
+										if(entry.getValue().getPrice() < min) {
+									        min = entry.getValue().getPrice();
+									        minKeys.clear();
+									    }
+									    if(entry.getValue().getPrice() == min) {
+									        minKeys.add(entry.getKey());
+									    }
+									}
+									
+									HotelPriceModel hotelPriceModel = roomPrices.get(minKeys.get(0));
+									propertyListViewModel.setTotalPrice(String.valueOf(hotelPriceModel.getPrice()));
+									// TODO Calculate for ORA Discount
+									propertyListViewModel.setDiscountedPrice(String.valueOf(hotelPriceModel.getPrice() - hotelPriceModel.getCommission()));
+								}
+								
 							}
-						}
+						//}
 						
-						Double min = Double.MAX_VALUE;
-						List<String> minKeys = new ArrayList<> ();
-						for(Map.Entry<String, HotelPriceModel> entry: roomPrices.entrySet()) {
-							if(entry.getValue().getPrice() < min) {
-						        min = entry.getValue().getPrice();
-						        minKeys.clear();
-						    }
-						    if(entry.getValue().getPrice() == min) {
-						        minKeys.add(entry.getKey());
-						    }
-						}
-						
-						HotelPriceModel hotelPriceModel = roomPrices.get(minKeys.get(0));
-						propertyListViewModel.setTotalPrice(String.valueOf(hotelPriceModel.getPrice()));
-						// TODO Calculate for ORA Discount
-						propertyListViewModel.setDiscountedPrice(String.valueOf(hotelPriceModel.getPrice() - hotelPriceModel.getCommission()));
+						propertyListViewModel.setStayType("PRIVATE");
+						propertyListViewModel.setIsBookmark(false);
+						propertyListViewModel.setPgCategorySex("BOTH");
 					}
-					
-					propertyListViewModel.setStayType("PRIVATE");
-					propertyListViewModel.setIsBookmark(false);
-					propertyListViewModel.setPgCategorySex("BOTH");
 					
 					propertyListViewModels.add(propertyListViewModel);
-					//break;}
+					//break;
 				});
 			}
 		}
@@ -467,4 +510,4 @@ public class HotelServiceImpl implements HotelService {
 		return propertyModel;
 	}
 
-}
+}*/

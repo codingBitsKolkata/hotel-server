@@ -58,6 +58,15 @@ public class HotelDataServiceImpl implements HotelDataService {
 				description = description.replaceAll("<br>", "");
 			}
 			hotelDataEntity.setDescriptiveText(description);
+			
+			String address = entry.getValue().getAddress();
+			if(StringUtils.isNotEmpty(address)) {
+				address = address.replaceAll("Address", "");
+				address = address.replaceAll(":", "");
+			}
+			hotelDataEntity.setAddress(address);
+			
+			hotelDataEntity.setHotelImage(entry.getValue().getHotelImage());
 			hotelDataEntity.setHotelCode(entry.getKey());
 			hotelDataEntity.setHotelName(entry.getValue().getHotelName());
 			hotelDataEntity.setLatitude(entry.getValue().getLatitude());

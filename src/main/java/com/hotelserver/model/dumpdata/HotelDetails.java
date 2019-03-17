@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.hotelserver.model.dumpdata.Reviews;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -20,6 +19,8 @@ public class HotelDetails {
 
 	private String hotelName;
 	private String descriptiveText;
+	private String hotelImage;
+	private String address;
 	private String longitude;
 	private String latitude;
 	private String checkOutTime;

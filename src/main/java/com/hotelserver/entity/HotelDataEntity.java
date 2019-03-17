@@ -44,6 +44,14 @@ public class HotelDataEntity extends CommonEntity {
 	@JsonProperty("hotelName")
 	private String hotelName;
 	
+	@Column(name = "hotel_image")
+	@JsonProperty("hotelImage")
+	private String hotelImage;
+	
+	@Column(name = "address")
+	@JsonProperty("address")
+	private String address;
+	
 	@Column(name = "descriptive_text", length = 65535, columnDefinition = "Text")
 	@JsonProperty("descriptiveText")
 	private String descriptiveText;

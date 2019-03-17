@@ -20,6 +20,7 @@ import org.w3c.dom.NodeList;
 
 import com.hotelserver.model.dumpdata.HotelDetails;
 import com.hotelserver.model.dumpdata.Reviews;
+import com.hotelserver.service.HotelDataService;
 
 @Component
 public class ReadHotelDumpData {
@@ -72,12 +73,25 @@ public class ReadHotelDumpData {
 					Element policyInfoElement = (Element) policyInfoNode.item(0);
 					hotelDetails.setCheckInTime(policyInfoElement.getAttribute("CheckInTime"));
 					hotelDetails.setCheckOutTime(policyInfoElement.getAttribute("CheckOutTime"));
-
+					
+					NodeList contactInfos = element.getElementsByTagName("ContactInfos");
+					Element contactInfosElement = (Element) contactInfos.item(0);
+					NodeList contactInfoNode = contactInfosElement.getElementsByTagName("ContactInfo");
+					Element contactInfoElement = (Element) contactInfoNode.item(0);
+					NodeList addressesNode = contactInfoElement.getElementsByTagName("Addresses");
+					Element addressesElement = (Element) addressesNode.item(0);
+					NodeList addressNode = addressesElement.getElementsByTagName("Address");
+					Element addressElement = (Element) addressNode.item(0);
+					String address = addressElement.getElementsByTagName("AddressLine").item(2).getTextContent();
+					hotelDetails.setAddress(address);
+					
 					NodeList tPA_ExtensionsNode = element.getElementsByTagName("TPA_Extensions");
 					Element tPA_ExtensionsElement = (Element) tPA_ExtensionsNode.item(0);
+					hotelDetails.setHotelImage(tPA_ExtensionsElement.getElementsByTagName("ImagePath").item(0).getTextContent());
 					hotelDetails.setReviewCount(tPA_ExtensionsElement.getElementsByTagName("ReviewCount").item(0).getTextContent());
 					hotelDetails.setReviewRating(tPA_ExtensionsElement.getElementsByTagName("ReviewRating").item(0).getTextContent());
-
+					hotelDetails.setHotelImage(tPA_ExtensionsElement.getElementsByTagName("ImagePath").item(0).getTextContent());
+					
 					NodeList hotelReviewsNode = tPA_ExtensionsElement.getElementsByTagName("HotelReviews");
 					Element hotelReviewsElement = (Element) hotelReviewsNode.item(0);
 					NodeList hotelReviewNode = hotelReviewsElement.getElementsByTagName("HotelReview");
@@ -146,6 +160,7 @@ public class ReadHotelDumpData {
 					}
 
 					hotelDetails.setReviews(hotelReviews);
+					HotelDataService.HOTELDATA.put(hotelCode, hotelDetails);
 					hotelData.put(hotelCode, hotelDetails);
 				} catch (Exception e) {
 					System.err.println("Exception for hotelCode ==>> "+hotelCode);
@@ -153,6 +168,7 @@ public class ReadHotelDumpData {
 					logger.info("hotelCode ==>> "+hotelCode+" Exception in autoFileUpload -- "+Util.errorToString(e));
 				}
 			}
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 			logger.info("Exception in autoFileUpload -- "+Util.errorToString(e));
