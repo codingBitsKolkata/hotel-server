@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,9 +52,11 @@ public class HotelDataServiceImpl implements HotelDataService {
 			hotelDataEntity.setCreatedBy(1L);
 			hotelDataEntity.setCreatedDate(Util.getCurrentDateTime());
 			String description = entry.getValue().getDescriptiveText();
-			description = description.replaceAll("<b>", "");
-			description = description.replaceAll("</b>", "");
-			description = description.replaceAll("<br>", "");
+			if(StringUtils.isNotEmpty(description)) {
+				description = description.replaceAll("<b>", "");
+				description = description.replaceAll("</b>", "");
+				description = description.replaceAll("<br>", "");
+			}
 			hotelDataEntity.setDescriptiveText(description);
 			hotelDataEntity.setHotelCode(entry.getKey());
 			hotelDataEntity.setHotelName(entry.getValue().getHotelName());
@@ -71,7 +74,7 @@ public class HotelDataServiceImpl implements HotelDataService {
 					hotelReviewEntity.setAvgGuestRating(r.getAvgGuestRating());
 					hotelReviewEntity.setCleanliness(r.getCleanliness());
 					String comments = r.getComments();
-					if(comments.contains("'")) {
+					if(StringUtils.isNotEmpty(comments) && comments.contains("'")) {
 						comments = comments.replaceAll("'", "\'");
 					}
 					hotelReviewEntity.setComments(comments);

@@ -91,22 +91,54 @@ public class ReadHotelDumpData {
 							Element reviewsElement = (Element) node2;
 
 							Reviews reviews = new Reviews();
-							reviews.setAvgGuestRating(
-									reviewsElement.getElementsByTagName("AvgGuestRating").item(0).getTextContent());
-							reviews
-									.setComments(reviewsElement.getElementsByTagName("Comments").item(0).getTextContent());
-							reviews
-									.setPostDate(reviewsElement.getElementsByTagName("PostDate").item(0).getTextContent());
-							reviews.setCleanliness(
-									reviewsElement.getElementsByTagName("Cleanliness").item(0).getTextContent());
-							reviews.setDiningQuality(
-									reviewsElement.getElementsByTagName("DiningQuality").item(0).getTextContent());
-							reviews.setOverallRating(
-									reviewsElement.getElementsByTagName("OverallRating").item(0).getTextContent());
-							reviews.setRoomQuality(
-									reviewsElement.getElementsByTagName("RoomQuality").item(0).getTextContent());
-							reviews.setServiceQuality(
-									reviewsElement.getElementsByTagName("ServiceQuality").item(0).getTextContent());
+							if(Objects.nonNull(reviewsElement) && Objects.nonNull(reviewsElement.getElementsByTagName("AvgGuestRating")) 
+									&& Objects.nonNull(reviewsElement.getElementsByTagName("AvgGuestRating").item(0))) {
+								reviews.setAvgGuestRating(
+										reviewsElement.getElementsByTagName("AvgGuestRating").item(0).getTextContent());
+							}
+							
+							if(Objects.nonNull(reviewsElement) && Objects.nonNull(reviewsElement.getElementsByTagName("Comments")) 
+									&& Objects.nonNull(reviewsElement.getElementsByTagName("Comments").item(0))) {
+								reviews
+								.setComments(reviewsElement.getElementsByTagName("Comments").item(0).getTextContent());
+							}
+							
+							
+							if(Objects.nonNull(reviewsElement) && Objects.nonNull(reviewsElement.getElementsByTagName("PostDate")) 
+									&& Objects.nonNull(reviewsElement.getElementsByTagName("PostDate").item(0))) {
+								reviews
+								.setPostDate(reviewsElement.getElementsByTagName("PostDate").item(0).getTextContent());
+							}
+							
+							if(Objects.nonNull(reviewsElement) && Objects.nonNull(reviewsElement.getElementsByTagName("Cleanliness")) 
+									&& Objects.nonNull(reviewsElement.getElementsByTagName("Cleanliness").item(0))) {
+								reviews.setCleanliness(
+										reviewsElement.getElementsByTagName("Cleanliness").item(0).getTextContent());
+							}
+							
+							if(Objects.nonNull(reviewsElement) && Objects.nonNull(reviewsElement.getElementsByTagName("DiningQuality")) 
+									&& Objects.nonNull(reviewsElement.getElementsByTagName("DiningQuality").item(0))) {
+								reviews.setDiningQuality(
+										reviewsElement.getElementsByTagName("DiningQuality").item(0).getTextContent());
+							}
+							
+							if(Objects.nonNull(reviewsElement) && Objects.nonNull(reviewsElement.getElementsByTagName("OverallRating")) 
+									&& Objects.nonNull(reviewsElement.getElementsByTagName("OverallRating").item(0))) {
+								reviews.setOverallRating(
+										reviewsElement.getElementsByTagName("OverallRating").item(0).getTextContent());
+							}
+							
+							if(Objects.nonNull(reviewsElement) && Objects.nonNull(reviewsElement.getElementsByTagName("RoomQuality")) 
+									&& Objects.nonNull(reviewsElement.getElementsByTagName("RoomQuality").item(0))) {
+								reviews.setRoomQuality(
+										reviewsElement.getElementsByTagName("RoomQuality").item(0).getTextContent());
+							}
+							
+							if(Objects.nonNull(reviewsElement) && Objects.nonNull(reviewsElement.getElementsByTagName("ServiceQuality")) 
+									&& Objects.nonNull(reviewsElement.getElementsByTagName("ServiceQuality").item(0))) {
+								reviews.setServiceQuality(
+										reviewsElement.getElementsByTagName("ServiceQuality").item(0).getTextContent());
+							}
 
 							hotelReviews.add(reviews);
 
