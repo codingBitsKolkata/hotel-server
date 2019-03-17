@@ -12,6 +12,9 @@ public class SoapConfig {
 	@Value("${yatra.url}")
 	private String yatraURL;
 	
+	@Value("${yatra.booking.url}")
+	private String yatraBookingURL;
+	
 	@Value("${package.path}")
 	private String packagePath;
 	
@@ -33,6 +36,17 @@ public class SoapConfig {
 
 		SearchClient client = new SearchClient();
 		client.setDefaultUri(yatraURL);
+		client.setMarshaller(marshaller);
+		client.setUnmarshaller(marshaller);
+		client.setInterceptors(new ClientInterceptor[] { soapClientInterceptor() });
+		return client;
+	}
+	
+	@Bean
+	public BookingClient bookingClient(Jaxb2Marshaller marshaller) {
+
+		BookingClient client = new BookingClient();
+		client.setDefaultUri(yatraBookingURL);
 		client.setMarshaller(marshaller);
 		client.setUnmarshaller(marshaller);
 		client.setInterceptors(new ClientInterceptor[] { soapClientInterceptor() });
