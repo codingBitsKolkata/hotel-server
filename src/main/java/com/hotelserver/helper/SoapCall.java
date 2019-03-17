@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 
+import com.hotelserver.config.BookingClient;
 import com.hotelserver.config.SearchClient;
 import com.hotelserver.model.propertylist.FilterCiteriaModel;
 import com.hotelserver.model.search.AvailRequestSegmentsType;
@@ -48,6 +49,9 @@ public class SoapCall extends WebServiceGatewaySupport {
 	
 	@Autowired
 	private SearchClient searchClient;
+	
+	@Autowired
+	private BookingClient bookingClient;
 	
 	public OTAHotelAvailRS firstCall(FilterCiteriaModel filterCiteriaModel) {
 		
