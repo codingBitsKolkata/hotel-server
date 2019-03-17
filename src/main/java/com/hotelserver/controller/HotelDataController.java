@@ -35,8 +35,10 @@ public class HotelDataController extends BaseController {
 			File dir = directory.getFile();
 			File[] files = dir.listFiles();
 			Map<String, HotelDetails> hotelData = readHotelDumpData.readMasterData(files[0]);
-			if(hotelData.size() > 0)
+			if(hotelData.size() > 0) {
+				System.err.println("hotelData.size() ==>> "+hotelData.size());
 				hotelDataService.saveFileData(hotelData);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 			logger.info("Exception in autoFileUpload -- "+Util.errorToString(e));

@@ -104,7 +104,6 @@ public class ReadHotelDumpData {
 
 				hotelDetails.setReviews(hotelReviews);
 				hotelData.put(element.getAttribute("HotelCode"), hotelDetails);
-
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
