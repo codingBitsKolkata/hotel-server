@@ -70,7 +70,11 @@ public class HotelDataServiceImpl implements HotelDataService {
 					HotelReviewEntity hotelReviewEntity = new HotelReviewEntity();
 					hotelReviewEntity.setAvgGuestRating(r.getAvgGuestRating());
 					hotelReviewEntity.setCleanliness(r.getCleanliness());
-					hotelReviewEntity.setComments(r.getComments());
+					String comments = r.getComments();
+					if(comments.contains("'")) {
+						comments = comments.replaceAll("'", "\'");
+					}
+					hotelReviewEntity.setComments(comments);
 					hotelReviewEntity.setCreatedBy(1L);
 					hotelReviewEntity.setCreatedDate(Util.getCurrentDateTime());
 					hotelReviewEntity.setDiningQuality(r.getDiningQuality());
