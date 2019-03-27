@@ -92,4 +92,10 @@ public class FilterCiteriaModel {
 	
 	@JsonProperty("correlationID")
 	private String correlationID;
+	
+	@JsonProperty("bookingInfos")
+	private BookingInfoModel bookingInfoModel;
+	
+	@JsonProperty("transactionIdentifier")
+	private String transactionIdentifier;
 }
